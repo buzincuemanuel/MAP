@@ -1,0 +1,54 @@
+# === IntelliJ IDEA ===
+# Folderul de configurare specific utilizatorului
+.idea/
+
+# Fișierele de module
+*.iml
+
+# Fișierele de workspace (dacă sunt folosite)
+*.iws
+
+# Folderul de output al compilatorului IntelliJ
+out/
+
+# === Maven ===
+# Folderul de output al build-ului Maven
+target/
+
+# Fișiere temporare Maven
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+
+# === Gradle ===
+# Foldere de build Gradle
+.gradle/
+build/
+bin/
+
+# === Fișiere Java compilate ===
+*.class
+
+# === Fișiere pachet (build artifacts) ===
+# Acestea ar trebui publicate într-un registru (ex. Nexus, Artifactory),
+# nu stocate în Git.
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# === Fișiere de log ===
+*.log
+logs/
+
+# === Fișiere specifice Sistemului de Operare ===
+# Mac
+.DS_Store
+# Windows
+Thumbs.db
