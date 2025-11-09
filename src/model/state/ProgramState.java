@@ -46,13 +46,6 @@ public class ProgramState {
         return !exeStack.isEmpty();
     }
 
-    public ProgramState oneStep() {
-        if (exeStack.isEmpty())
-            throw new RuntimeException("Program stack is empty!");
-        Statement currentStmt = exeStack.pop();
-        return currentStmt.execute(this);
-    }
-
     @Override
     public String toString() {
         return "\n=== Program State " + id + " ===\n" +

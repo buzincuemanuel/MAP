@@ -2,14 +2,15 @@ package model.state;
 
 import java.util.HashMap;
 import java.util.Map;
+import model.exception.MyException;
 
 public class MapSymbolTable<V> implements SymbolTable<V> {
     private final Map<String, V> table = new HashMap<>();
 
     @Override
-    public void setValue(String variableName, V value) {
+    public void setValue(String variableName, V value) throws MyException {
         if (!isDefined(variableName))
-            throw new RuntimeException("Variable not declared: " + variableName);
+            throw new MyException("Variable not declared: " + variableName);
         table.put(variableName, value);
     }
 
@@ -19,16 +20,16 @@ public class MapSymbolTable<V> implements SymbolTable<V> {
     }
 
     @Override
-    public V getValue(String variableName) {
+    public V getValue(String variableName) throws MyException {
         if (!isDefined(variableName))
-            throw new RuntimeException("Variable not declared: " + variableName);
+            throw new MyException("Variable not declared: " + variableName);
         return table.get(variableName);
     }
 
     @Override
-    public void declareVariable(V defaultValue, String variableName) {
+    public void declareVariable(V defaultValue, String variableName) throws MyException {
         if (isDefined(variableName))
-            throw new RuntimeException("Variable already declared: " + variableName);
+            throw new MyException("Variable already declared: " + variableName);
         table.put(variableName, defaultValue);
     }
 
