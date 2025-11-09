@@ -1,7 +1,8 @@
 package model.type;
 
-import model.value.Value
-import model.value.IntegerValue
+import model.value.BooleanValue;
+import model.value.Value;
+import model.value.IntegerValue;
 
 public enum Type {
     INTEGER,
