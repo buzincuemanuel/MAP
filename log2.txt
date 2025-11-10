@@ -1,0 +1,60 @@
+
+=== Program State 2 ===
+ExeStack: ExecutionStack: [(INTEGER a; (INTEGER b; (a = ArithmeticExpression[left=IntegerValue[value=2], operator=+, right=ArithmeticExpression[left=IntegerValue[value=3], operator=*, right=IntegerValue[value=5]]]; (b = ArithmeticExpression[left=VariableExpression[variableName=a], operator=+, right=IntegerValue[value=1]]; PrintStatement[expression=VariableExpression[variableName=b]]))))]
+SymTable: SymbolTable{{}}
+Out: ListOut{elements=[]}
+
+
+=== Program State 2 ===
+ExeStack: ExecutionStack: [INTEGER a, (INTEGER b; (a = ArithmeticExpression[left=IntegerValue[value=2], operator=+, right=ArithmeticExpression[left=IntegerValue[value=3], operator=*, right=IntegerValue[value=5]]]; (b = ArithmeticExpression[left=VariableExpression[variableName=a], operator=+, right=IntegerValue[value=1]]; PrintStatement[expression=VariableExpression[variableName=b]])))]
+SymTable: SymbolTable{{}}
+Out: ListOut{elements=[]}
+
+
+=== Program State 2 ===
+ExeStack: ExecutionStack: [(INTEGER b; (a = ArithmeticExpression[left=IntegerValue[value=2], operator=+, right=ArithmeticExpression[left=IntegerValue[value=3], operator=*, right=IntegerValue[value=5]]]; (b = ArithmeticExpression[left=VariableExpression[variableName=a], operator=+, right=IntegerValue[value=1]]; PrintStatement[expression=VariableExpression[variableName=b]])))]
+SymTable: SymbolTable{{a=IntegerValue[value=0]}}
+Out: ListOut{elements=[]}
+
+
+=== Program State 2 ===
+ExeStack: ExecutionStack: [INTEGER b, (a = ArithmeticExpression[left=IntegerValue[value=2], operator=+, right=ArithmeticExpression[left=IntegerValue[value=3], operator=*, right=IntegerValue[value=5]]]; (b = ArithmeticExpression[left=VariableExpression[variableName=a], operator=+, right=IntegerValue[value=1]]; PrintStatement[expression=VariableExpression[variableName=b]]))]
+SymTable: SymbolTable{{a=IntegerValue[value=0]}}
+Out: ListOut{elements=[]}
+
+
+=== Program State 2 ===
+ExeStack: ExecutionStack: [(a = ArithmeticExpression[left=IntegerValue[value=2], operator=+, right=ArithmeticExpression[left=IntegerValue[value=3], operator=*, right=IntegerValue[value=5]]]; (b = ArithmeticExpression[left=VariableExpression[variableName=a], operator=+, right=IntegerValue[value=1]]; PrintStatement[expression=VariableExpression[variableName=b]]))]
+SymTable: SymbolTable{{a=IntegerValue[value=0], b=IntegerValue[value=0]}}
+Out: ListOut{elements=[]}
+
+
+=== Program State 2 ===
+ExeStack: ExecutionStack: [a = ArithmeticExpression[left=IntegerValue[value=2], operator=+, right=ArithmeticExpression[left=IntegerValue[value=3], operator=*, right=IntegerValue[value=5]]], (b = ArithmeticExpression[left=VariableExpression[variableName=a], operator=+, right=IntegerValue[value=1]]; PrintStatement[expression=VariableExpression[variableName=b]])]
+SymTable: SymbolTable{{a=IntegerValue[value=0], b=IntegerValue[value=0]}}
+Out: ListOut{elements=[]}
+
+
+=== Program State 2 ===
+ExeStack: ExecutionStack: [(b = ArithmeticExpression[left=VariableExpression[variableName=a], operator=+, right=IntegerValue[value=1]]; PrintStatement[expression=VariableExpression[variableName=b]])]
+SymTable: SymbolTable{{a=IntegerValue[value=17], b=IntegerValue[value=0]}}
+Out: ListOut{elements=[]}
+
+
+=== Program State 2 ===
+ExeStack: ExecutionStack: [b = ArithmeticExpression[left=VariableExpression[variableName=a], operator=+, right=IntegerValue[value=1]], PrintStatement[expression=VariableExpression[variableName=b]]]
+SymTable: SymbolTable{{a=IntegerValue[value=17], b=IntegerValue[value=0]}}
+Out: ListOut{elements=[]}
+
+
+=== Program State 2 ===
+ExeStack: ExecutionStack: [PrintStatement[expression=VariableExpression[variableName=b]]]
+SymTable: SymbolTable{{a=IntegerValue[value=17], b=IntegerValue[value=18]}}
+Out: ListOut{elements=[]}
+
+
+=== Program State 2 ===
+ExeStack: ExecutionStack: []
+SymTable: SymbolTable{{a=IntegerValue[value=17], b=IntegerValue[value=18]}}
+Out: ListOut{elements=[IntegerValue[value=18]]}
+
