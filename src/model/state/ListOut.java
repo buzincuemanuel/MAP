@@ -15,4 +15,9 @@ public class ListOut<T> implements Out<T> {
     public String toString() {
         return "ListOut{" + "elements=" + elements + '}';
     }
+
+    @Override
+    public List<T> getValues() {
+        return elements;
+    }
 }

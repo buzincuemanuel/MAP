@@ -1,36 +1,42 @@
-
-=== Program State 1 ===
-ExeStack: ExecutionStack: [(INTEGER v; (v = IntegerValue[value=2]; PrintStatement[expression=VariableExpression[variableName=v]]))]
-SymTable: SymbolTable{{}}
-Out: ListOut{elements=[]}
-
-
-=== Program State 1 ===
-ExeStack: ExecutionStack: [INTEGER v, (v = IntegerValue[value=2]; PrintStatement[expression=VariableExpression[variableName=v]])]
-SymTable: SymbolTable{{}}
-Out: ListOut{elements=[]}
-
-
-=== Program State 1 ===
-ExeStack: ExecutionStack: [(v = IntegerValue[value=2]; PrintStatement[expression=VariableExpression[variableName=v]])]
-SymTable: SymbolTable{{v=IntegerValue[value=0]}}
-Out: ListOut{elements=[]}
-
-
-=== Program State 1 ===
-ExeStack: ExecutionStack: [v = IntegerValue[value=2], PrintStatement[expression=VariableExpression[variableName=v]]]
-SymTable: SymbolTable{{v=IntegerValue[value=0]}}
-Out: ListOut{elements=[]}
-
-
-=== Program State 1 ===
-ExeStack: ExecutionStack: [PrintStatement[expression=VariableExpression[variableName=v]]]
-SymTable: SymbolTable{{v=IntegerValue[value=2]}}
-Out: ListOut{elements=[]}
-
-
-=== Program State 1 ===
-ExeStack: ExecutionStack: []
-SymTable: SymbolTable{{v=IntegerValue[value=2]}}
-Out: ListOut{elements=[IntegerValue[value=2]]}
-
+ExeStack:
+(INTEGER v; (v = IntegerValue[value=2]; PrintStatement[expression=VariableExpression[variableName=v]]))
+SymTable:
+Out:
+FileTable:
+---------------------------------
+ExeStack:
+INTEGER v
+(v = IntegerValue[value=2]; PrintStatement[expression=VariableExpression[variableName=v]])
+SymTable:
+Out:
+FileTable:
+---------------------------------
+ExeStack:
+(v = IntegerValue[value=2]; PrintStatement[expression=VariableExpression[variableName=v]])
+SymTable:
+v --> IntegerValue[value=0]
+Out:
+FileTable:
+---------------------------------
+ExeStack:
+v = IntegerValue[value=2]
+PrintStatement[expression=VariableExpression[variableName=v]]
+SymTable:
+v --> IntegerValue[value=0]
+Out:
+FileTable:
+---------------------------------
+ExeStack:
+PrintStatement[expression=VariableExpression[variableName=v]]
+SymTable:
+v --> IntegerValue[value=2]
+Out:
+FileTable:
+---------------------------------
+ExeStack:
+SymTable:
+v --> IntegerValue[value=2]
+Out:
+IntegerValue[value=2]
+FileTable:
+---------------------------------

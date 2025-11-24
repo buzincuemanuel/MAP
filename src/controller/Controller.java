@@ -21,31 +21,23 @@ public class Controller {
 
     public ProgramState oneStep(ProgramState state) throws MyException {
         ExecutionStack<Statement> stack = state.getExeStack();
-
         if (stack.isEmpty()) {
             throw new MyException("Program state stack is empty!");
         }
-
         Statement currentStmt = stack.pop();
         return currentStmt.execute(state);
     }
 
     public void allStep() throws MyException {
         ProgramState prg = repository.getCrtPrg();
-
-        logCurrentState(prg, false);
+        repository.logPrgStateExec();
+        if (displaySteps) System.out.println(prg);
 
         while (!prg.getExeStack().isEmpty()) {
             oneStep(prg);
-            logCurrentState(prg, true);
-        }
-    }
 
-    private void logCurrentState(ProgramState prg, boolean append) throws MyException {
-        repository.logPrgStateExec(prg, append);
-
-        if (this.displaySteps) {
-            System.out.println(prg.toString());
+            repository.logPrgStateExec();
+            if (displaySteps) System.out.println(prg);
         }
     }
 }
