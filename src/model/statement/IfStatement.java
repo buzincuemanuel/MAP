@@ -4,7 +4,7 @@ import model.exception.MyException;
 import model.expression.Expression;
 import model.state.ExecutionStack;
 import model.state.ProgramState;
-import model.type.Type;
+import model.type.BoolType;
 import model.value.BooleanValue;
 import model.value.Value;
 
@@ -14,7 +14,7 @@ public record IfStatement(Expression condition, Statement thenStatement, Stateme
     public ProgramState execute(ProgramState state) throws MyException {
         Value value = condition.evaluate(state.getSymTable());
 
-        if (value.getType() != Type.BOOLEAN) {
+        if (!value.getType().equals(new BoolType())) {
             throw new MyException("Conditional expression is not a boolean");
         }
 

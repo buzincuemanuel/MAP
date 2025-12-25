@@ -3,7 +3,7 @@ package model.statement;
 import model.exception.MyException;
 import model.expression.Expression;
 import model.state.ProgramState;
-import model.type.Type;
+import model.type.StringType;
 import model.value.StringValue;
 import model.value.Value;
 import java.io.BufferedReader;
@@ -14,7 +14,7 @@ public record OpenRFileStatement(Expression expression) implements Statement {
     @Override
     public ProgramState execute(ProgramState state) throws MyException {
         Value val = expression.evaluate(state.getSymTable());
-        if (val.getType() != Type.STRING)
+        if (!val.getType().equals(new StringType()))
             throw new MyException("OpenRFile: Expression is not a string.");
 
         StringValue fileName = (StringValue) val;

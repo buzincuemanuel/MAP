@@ -4,6 +4,8 @@ import controller.Controller;
 import model.expression.*;
 import model.state.*;
 import model.statement.*;
+import model.type.BoolType;
+import model.type.IntType;
 import model.type.Type;
 import model.value.*;
 import repository.IRepository;
@@ -11,7 +13,7 @@ import repository.Repository;
 
 public class Interpreter {
     public static void main(String[] args) {
-        Statement ex1 = new CompoundStatement(new VariableDeclarationStatement("v", Type.INTEGER),
+        Statement ex1 = new CompoundStatement(new VariableDeclarationStatement("v", new IntType()),
                 new CompoundStatement(new AssignmentStatement("v", new ValueExpression(new IntegerValue(2))),
                         new PrintStatement(new VariableExpression("v"))));
 
@@ -23,9 +25,9 @@ public class Interpreter {
             Controller ctr1 = new Controller(repo1);
 
             Statement ex2 = new CompoundStatement(
-                    new VariableDeclarationStatement("a", Type.INTEGER),
+                    new VariableDeclarationStatement("a", new IntType()),
                     new CompoundStatement(
-                            new VariableDeclarationStatement("b", Type.INTEGER),
+                            new VariableDeclarationStatement("b", new IntType()),
                             new CompoundStatement(
                                     new AssignmentStatement("a",
                                             new ArithmeticExpression(
@@ -58,8 +60,8 @@ public class Interpreter {
             repo2.clearLogFile();
             Controller ctr2 = new Controller(repo2);
 
-            Statement ex3 = new CompoundStatement(new VariableDeclarationStatement("a", Type.BOOLEAN),
-                    new CompoundStatement(new VariableDeclarationStatement("v", Type.INTEGER),
+            Statement ex3 = new CompoundStatement(new VariableDeclarationStatement("a", new BoolType()),
+                    new CompoundStatement(new VariableDeclarationStatement("v", new BoolType()),
                             new CompoundStatement(new AssignmentStatement("a", new ValueExpression(new BooleanValue(true))),
                                     new CompoundStatement(new IfStatement(new VariableExpression("a"),
                                             new AssignmentStatement("v", new ValueExpression(new IntegerValue(2))),

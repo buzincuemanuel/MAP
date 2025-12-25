@@ -7,6 +7,8 @@ import model.expression.ValueExpression;
 import model.expression.VariableExpression;
 import model.state.*;
 import model.statement.*;
+import model.type.BoolType;
+import model.type.IntType;
 import model.type.Type;
 import model.value.BooleanValue;
 import model.value.IntegerValue;
@@ -19,7 +21,7 @@ import java.util.Scanner;
 public class View {
 
     private static final Statement example1 = new CompoundStatement(
-            new VariableDeclarationStatement("v", Type.INTEGER),
+            new VariableDeclarationStatement("v", new IntType()),
             new CompoundStatement(
                     new AssignmentStatement("v", new ValueExpression(new IntegerValue(2))),
                     new PrintStatement(new VariableExpression("v"))
@@ -27,9 +29,9 @@ public class View {
     );
 
     private static final Statement example2 = new CompoundStatement(
-            new VariableDeclarationStatement("a", Type.INTEGER),
+            new VariableDeclarationStatement("a", new IntType()),
             new CompoundStatement(
-                    new VariableDeclarationStatement("b", Type.INTEGER),
+                    new VariableDeclarationStatement("b", new IntType()),
                     new CompoundStatement(
                             new AssignmentStatement("a", new ArithmeticExpression(
                                     new ValueExpression(new IntegerValue(2)),
@@ -53,9 +55,9 @@ public class View {
     );
 
     private static final Statement example3 = new CompoundStatement(
-            new VariableDeclarationStatement("a", Type.BOOLEAN),
+            new VariableDeclarationStatement("a", new BoolType()),
             new CompoundStatement(
-                    new VariableDeclarationStatement("v", Type.INTEGER),
+                    new VariableDeclarationStatement("v", new BoolType()),
                     new CompoundStatement(
                             new AssignmentStatement("a", new ValueExpression(new BooleanValue(true))),
                             new CompoundStatement(

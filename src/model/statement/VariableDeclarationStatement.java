@@ -16,7 +16,7 @@ public record VariableDeclarationStatement(String variableName, Type type) imple
             throw new MyException("Variable " + variableName + " is already declared.");
         }
 
-        Value defaultValue = type.getDefaultValue();
+        Value defaultValue = type.defaultValue();
 
         symTable.declareVariable(defaultValue, variableName);
 

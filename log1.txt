@@ -1,11 +1,11 @@
 ExeStack:
-(INTEGER v; (v = IntegerValue[value=2]; PrintStatement[expression=VariableExpression[variableName=v]]))
+(model.type.IntType@53d8d10a v; (v = IntegerValue[value=2]; PrintStatement[expression=VariableExpression[variableName=v]]))
 SymTable:
 Out:
 FileTable:
 ---------------------------------
 ExeStack:
-INTEGER v
+model.type.IntType@53d8d10a v
 (v = IntegerValue[value=2]; PrintStatement[expression=VariableExpression[variableName=v]])
 SymTable:
 Out:

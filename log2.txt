@@ -1,0 +1,78 @@
+ExeStack:
+(model.type.IntType@4c873330 a; (model.type.IntType@119d7047 b; (a = ArithmeticExpression[left=IntegerValue[value=2], operator=+, right=ArithmeticExpression[left=IntegerValue[value=3], operator=*, right=IntegerValue[value=5]]]; (b = ArithmeticExpression[left=VariableExpression[variableName=a], operator=+, right=IntegerValue[value=1]]; PrintStatement[expression=VariableExpression[variableName=b]]))))
+SymTable:
+Out:
+FileTable:
+---------------------------------
+ExeStack:
+model.type.IntType@4c873330 a
+(model.type.IntType@119d7047 b; (a = ArithmeticExpression[left=IntegerValue[value=2], operator=+, right=ArithmeticExpression[left=IntegerValue[value=3], operator=*, right=IntegerValue[value=5]]]; (b = ArithmeticExpression[left=VariableExpression[variableName=a], operator=+, right=IntegerValue[value=1]]; PrintStatement[expression=VariableExpression[variableName=b]])))
+SymTable:
+Out:
+FileTable:
+---------------------------------
+ExeStack:
+(model.type.IntType@119d7047 b; (a = ArithmeticExpression[left=IntegerValue[value=2], operator=+, right=ArithmeticExpression[left=IntegerValue[value=3], operator=*, right=IntegerValue[value=5]]]; (b = ArithmeticExpression[left=VariableExpression[variableName=a], operator=+, right=IntegerValue[value=1]]; PrintStatement[expression=VariableExpression[variableName=b]])))
+SymTable:
+a --> IntegerValue[value=0]
+Out:
+FileTable:
+---------------------------------
+ExeStack:
+model.type.IntType@119d7047 b
+(a = ArithmeticExpression[left=IntegerValue[value=2], operator=+, right=ArithmeticExpression[left=IntegerValue[value=3], operator=*, right=IntegerValue[value=5]]]; (b = ArithmeticExpression[left=VariableExpression[variableName=a], operator=+, right=IntegerValue[value=1]]; PrintStatement[expression=VariableExpression[variableName=b]]))
+SymTable:
+a --> IntegerValue[value=0]
+Out:
+FileTable:
+---------------------------------
+ExeStack:
+(a = ArithmeticExpression[left=IntegerValue[value=2], operator=+, right=ArithmeticExpression[left=IntegerValue[value=3], operator=*, right=IntegerValue[value=5]]]; (b = ArithmeticExpression[left=VariableExpression[variableName=a], operator=+, right=IntegerValue[value=1]]; PrintStatement[expression=VariableExpression[variableName=b]]))
+SymTable:
+a --> IntegerValue[value=0]
+b --> IntegerValue[value=0]
+Out:
+FileTable:
+---------------------------------
+ExeStack:
+a = ArithmeticExpression[left=IntegerValue[value=2], operator=+, right=ArithmeticExpression[left=IntegerValue[value=3], operator=*, right=IntegerValue[value=5]]]
+(b = ArithmeticExpression[left=VariableExpression[variableName=a], operator=+, right=IntegerValue[value=1]]; PrintStatement[expression=VariableExpression[variableName=b]])
+SymTable:
+a --> IntegerValue[value=0]
+b --> IntegerValue[value=0]
+Out:
+FileTable:
+---------------------------------
+ExeStack:
+(b = ArithmeticExpression[left=VariableExpression[variableName=a], operator=+, right=IntegerValue[value=1]]; PrintStatement[expression=VariableExpression[variableName=b]])
+SymTable:
+a --> IntegerValue[value=17]
+b --> IntegerValue[value=0]
+Out:
+FileTable:
+---------------------------------
+ExeStack:
+b = ArithmeticExpression[left=VariableExpression[variableName=a], operator=+, right=IntegerValue[value=1]]
+PrintStatement[expression=VariableExpression[variableName=b]]
+SymTable:
+a --> IntegerValue[value=17]
+b --> IntegerValue[value=0]
+Out:
+FileTable:
+---------------------------------
+ExeStack:
+PrintStatement[expression=VariableExpression[variableName=b]]
+SymTable:
+a --> IntegerValue[value=17]
+b --> IntegerValue[value=18]
+Out:
+FileTable:
+---------------------------------
+ExeStack:
+SymTable:
+a --> IntegerValue[value=17]
+b --> IntegerValue[value=18]
+Out:
+IntegerValue[value=18]
+FileTable:
+---------------------------------

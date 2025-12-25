@@ -3,7 +3,8 @@ package model.statement;
 import model.exception.MyException;
 import model.expression.Expression;
 import model.state.ProgramState;
-import model.type.Type;
+import model.type.IntType;
+import model.type.StringType;
 import model.value.IntegerValue;
 import model.value.StringValue;
 import model.value.Value;
@@ -15,11 +16,11 @@ public record ReadFileStatement(Expression expression, String varName) implement
     public ProgramState execute(ProgramState state) throws MyException {
         if (!state.getSymTable().isDefined(varName))
             throw new MyException("ReadFile: Variable " + varName + " is not defined.");
-        if (state.getSymTable().getValue(varName).getType() != Type.INTEGER)
+        if (!state.getSymTable().getValue(varName).getType().equals(new IntType()))
             throw new MyException("ReadFile: Variable " + varName + " is not int.");
 
         Value val = expression.evaluate(state.getSymTable());
-        if (val.getType() != Type.STRING)
+        if (!val.getType().equals(new StringType()))
             throw new MyException("ReadFile: Expression is not a string.");
 
         StringValue fileName = (StringValue) val;
