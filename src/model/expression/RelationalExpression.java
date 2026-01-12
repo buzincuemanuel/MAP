@@ -1,6 +1,7 @@
 package model.expression;
 
 import model.exception.MyException;
+import model.state.IHeap;
 import model.state.SymbolTable;
 import model.value.BooleanValue;
 import model.value.IntegerValue;
@@ -8,9 +9,9 @@ import model.value.Value;
 
 public record RelationalExpression(Expression left, String operator, Expression right) implements Expression {
     @Override
-    public Value evaluate(SymbolTable<Value> symTable) throws MyException {
-        Value v1 = left.evaluate(symTable);
-        Value v2 = right.evaluate(symTable);
+    public Value evaluate(SymbolTable<Value> symTable, IHeap heap) throws MyException {
+        Value v1 = left.evaluate(symTable, heap);
+        Value v2 = right.evaluate(symTable, heap);
 
         if (!(v1 instanceof IntegerValue(int n1)))
             throw new MyException("RelationalExpression: Left operand not an integer.");

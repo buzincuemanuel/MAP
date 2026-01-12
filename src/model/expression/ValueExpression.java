@@ -1,5 +1,6 @@
 package model.expression;
 
+import model.state.IHeap;
 import model.state.SymbolTable;
 import model.exception.MyException;
 import model.value.Value;
@@ -12,7 +13,7 @@ public class ValueExpression implements Expression {
     }
 
     @Override
-    public Value evaluate(SymbolTable<Value> symTable) throws MyException {
+    public Value evaluate(SymbolTable<Value> symTable, IHeap heap) throws MyException {
         return val;
     }
 

@@ -17,7 +17,7 @@ public record AssignmentStatement(String variableName, Expression expression) im
             throw new MyException("Assignment error: Variable " + variableName + " is not declared.");
         }
 
-        Value newValue = expression.evaluate(symTable);
+        Value newValue = expression.evaluate(symTable, state.getHeap());
         Type variableType = symTable.getValue(variableName).getType();
 
         if (!newValue.getType().equals(variableType)) {

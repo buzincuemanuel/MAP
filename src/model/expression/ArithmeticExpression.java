@@ -1,6 +1,7 @@
 package model.expression;
 
 import model.exception.MyException;
+import model.state.IHeap;
 import model.state.SymbolTable;
 import model.value.Value;
 import model.value.IntegerValue;
@@ -8,10 +9,10 @@ import model.value.IntegerValue;
 public record ArithmeticExpression(Expression left, char operator, Expression right) implements Expression {
 
     @Override
-    public Value evaluate(SymbolTable<Value> symbolTable) throws MyException {
+    public Value evaluate(SymbolTable<Value> symbolTable, IHeap heap) throws MyException {
 
-        Value resultLeft = left.evaluate(symbolTable);
-        Value resultRight = right.evaluate(symbolTable);
+        Value resultLeft = left.evaluate(symbolTable, heap);
+        Value resultRight = right.evaluate(symbolTable, heap);
 
         if (!(resultLeft instanceof IntegerValue(int leftValue))){
             throw new MyException("ArithmeticExpression: left value is not an integer");

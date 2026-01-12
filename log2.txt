@@ -1,78 +1,93 @@
 ExeStack:
-(model.type.IntType@4c873330 a; (model.type.IntType@119d7047 b; (a = ArithmeticExpression[left=IntegerValue[value=2], operator=+, right=ArithmeticExpression[left=IntegerValue[value=3], operator=*, right=IntegerValue[value=5]]]; (b = ArithmeticExpression[left=VariableExpression[variableName=a], operator=+, right=IntegerValue[value=1]]; PrintStatement[expression=VariableExpression[variableName=b]]))))
+(Ref(model.type.IntType@3b07d329) v; (new(v, IntegerValue[value=20]); (Ref(Ref(model.type.IntType@41629346)) a; (new(a, VariableExpression[variableName=v]); (new(v, IntegerValue[value=30]); PrintStatement[expression=rH(rH(VariableExpression[variableName=a]))])))))
 SymTable:
 Out:
 FileTable:
 ---------------------------------
 ExeStack:
-model.type.IntType@4c873330 a
-(model.type.IntType@119d7047 b; (a = ArithmeticExpression[left=IntegerValue[value=2], operator=+, right=ArithmeticExpression[left=IntegerValue[value=3], operator=*, right=IntegerValue[value=5]]]; (b = ArithmeticExpression[left=VariableExpression[variableName=a], operator=+, right=IntegerValue[value=1]]; PrintStatement[expression=VariableExpression[variableName=b]])))
+Ref(model.type.IntType@3b07d329) v
+(new(v, IntegerValue[value=20]); (Ref(Ref(model.type.IntType@41629346)) a; (new(a, VariableExpression[variableName=v]); (new(v, IntegerValue[value=30]); PrintStatement[expression=rH(rH(VariableExpression[variableName=a]))]))))
 SymTable:
 Out:
 FileTable:
 ---------------------------------
 ExeStack:
-(model.type.IntType@119d7047 b; (a = ArithmeticExpression[left=IntegerValue[value=2], operator=+, right=ArithmeticExpression[left=IntegerValue[value=3], operator=*, right=IntegerValue[value=5]]]; (b = ArithmeticExpression[left=VariableExpression[variableName=a], operator=+, right=IntegerValue[value=1]]; PrintStatement[expression=VariableExpression[variableName=b]])))
+(new(v, IntegerValue[value=20]); (Ref(Ref(model.type.IntType@41629346)) a; (new(a, VariableExpression[variableName=v]); (new(v, IntegerValue[value=30]); PrintStatement[expression=rH(rH(VariableExpression[variableName=a]))]))))
 SymTable:
-a --> IntegerValue[value=0]
+v --> (0, model.type.IntType@3b07d329)
 Out:
 FileTable:
 ---------------------------------
 ExeStack:
-model.type.IntType@119d7047 b
-(a = ArithmeticExpression[left=IntegerValue[value=2], operator=+, right=ArithmeticExpression[left=IntegerValue[value=3], operator=*, right=IntegerValue[value=5]]]; (b = ArithmeticExpression[left=VariableExpression[variableName=a], operator=+, right=IntegerValue[value=1]]; PrintStatement[expression=VariableExpression[variableName=b]]))
+new(v, IntegerValue[value=20])
+(Ref(Ref(model.type.IntType@41629346)) a; (new(a, VariableExpression[variableName=v]); (new(v, IntegerValue[value=30]); PrintStatement[expression=rH(rH(VariableExpression[variableName=a]))])))
 SymTable:
-a --> IntegerValue[value=0]
+v --> (0, model.type.IntType@3b07d329)
 Out:
 FileTable:
 ---------------------------------
 ExeStack:
-(a = ArithmeticExpression[left=IntegerValue[value=2], operator=+, right=ArithmeticExpression[left=IntegerValue[value=3], operator=*, right=IntegerValue[value=5]]]; (b = ArithmeticExpression[left=VariableExpression[variableName=a], operator=+, right=IntegerValue[value=1]]; PrintStatement[expression=VariableExpression[variableName=b]]))
+(Ref(Ref(model.type.IntType@41629346)) a; (new(a, VariableExpression[variableName=v]); (new(v, IntegerValue[value=30]); PrintStatement[expression=rH(rH(VariableExpression[variableName=a]))])))
 SymTable:
-a --> IntegerValue[value=0]
-b --> IntegerValue[value=0]
+v --> (1, model.type.IntType@3b07d329)
 Out:
 FileTable:
 ---------------------------------
 ExeStack:
-a = ArithmeticExpression[left=IntegerValue[value=2], operator=+, right=ArithmeticExpression[left=IntegerValue[value=3], operator=*, right=IntegerValue[value=5]]]
-(b = ArithmeticExpression[left=VariableExpression[variableName=a], operator=+, right=IntegerValue[value=1]]; PrintStatement[expression=VariableExpression[variableName=b]])
+Ref(Ref(model.type.IntType@41629346)) a
+(new(a, VariableExpression[variableName=v]); (new(v, IntegerValue[value=30]); PrintStatement[expression=rH(rH(VariableExpression[variableName=a]))]))
 SymTable:
-a --> IntegerValue[value=0]
-b --> IntegerValue[value=0]
+v --> (1, model.type.IntType@3b07d329)
 Out:
 FileTable:
 ---------------------------------
 ExeStack:
-(b = ArithmeticExpression[left=VariableExpression[variableName=a], operator=+, right=IntegerValue[value=1]]; PrintStatement[expression=VariableExpression[variableName=b]])
+(new(a, VariableExpression[variableName=v]); (new(v, IntegerValue[value=30]); PrintStatement[expression=rH(rH(VariableExpression[variableName=a]))]))
 SymTable:
-a --> IntegerValue[value=17]
-b --> IntegerValue[value=0]
+a --> (0, Ref(model.type.IntType@41629346))
+v --> (1, model.type.IntType@3b07d329)
 Out:
 FileTable:
 ---------------------------------
 ExeStack:
-b = ArithmeticExpression[left=VariableExpression[variableName=a], operator=+, right=IntegerValue[value=1]]
-PrintStatement[expression=VariableExpression[variableName=b]]
+new(a, VariableExpression[variableName=v])
+(new(v, IntegerValue[value=30]); PrintStatement[expression=rH(rH(VariableExpression[variableName=a]))])
 SymTable:
-a --> IntegerValue[value=17]
-b --> IntegerValue[value=0]
+a --> (0, Ref(model.type.IntType@41629346))
+v --> (1, model.type.IntType@3b07d329)
 Out:
 FileTable:
 ---------------------------------
 ExeStack:
-PrintStatement[expression=VariableExpression[variableName=b]]
+(new(v, IntegerValue[value=30]); PrintStatement[expression=rH(rH(VariableExpression[variableName=a]))])
 SymTable:
-a --> IntegerValue[value=17]
-b --> IntegerValue[value=18]
+a --> (2, Ref(model.type.IntType@41629346))
+v --> (1, model.type.IntType@3b07d329)
+Out:
+FileTable:
+---------------------------------
+ExeStack:
+new(v, IntegerValue[value=30])
+PrintStatement[expression=rH(rH(VariableExpression[variableName=a]))]
+SymTable:
+a --> (2, Ref(model.type.IntType@41629346))
+v --> (1, model.type.IntType@3b07d329)
+Out:
+FileTable:
+---------------------------------
+ExeStack:
+PrintStatement[expression=rH(rH(VariableExpression[variableName=a]))]
+SymTable:
+a --> (2, Ref(model.type.IntType@41629346))
+v --> (3, model.type.IntType@3b07d329)
 Out:
 FileTable:
 ---------------------------------
 ExeStack:
 SymTable:
-a --> IntegerValue[value=17]
-b --> IntegerValue[value=18]
+a --> (2, Ref(model.type.IntType@41629346))
+v --> (3, model.type.IntType@3b07d329)
 Out:
-IntegerValue[value=18]
+IntegerValue[value=20]
 FileTable:
 ---------------------------------

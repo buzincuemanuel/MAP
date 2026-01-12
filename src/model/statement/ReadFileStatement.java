@@ -19,7 +19,7 @@ public record ReadFileStatement(Expression expression, String varName) implement
         if (!state.getSymTable().getValue(varName).getType().equals(new IntType()))
             throw new MyException("ReadFile: Variable " + varName + " is not int.");
 
-        Value val = expression.evaluate(state.getSymTable());
+        Value val = expression.evaluate(state.getSymTable(), state.getHeap());
         if (!val.getType().equals(new StringType()))
             throw new MyException("ReadFile: Expression is not a string.");
 

@@ -1,6 +1,7 @@
 package model.expression;
 
 import model.exception.MyException;
+import model.state.IHeap;
 import model.state.SymbolTable;
 import model.value.Value;
 import model.value.BooleanValue;
@@ -8,10 +9,10 @@ import model.value.BooleanValue;
 public record BooleanExpression(Expression left, String operator, Expression right) implements Expression {
 
     @Override
-    public Value evaluate(SymbolTable<Value> symbolTable) throws MyException {
+    public Value evaluate(SymbolTable<Value> symbolTable, IHeap heap) throws MyException {
 
-        Value resultLeft = left.evaluate(symbolTable);
-        Value resultRight = right.evaluate(symbolTable);
+        Value resultLeft = left.evaluate(symbolTable, heap);
+        Value resultRight = right.evaluate(symbolTable, heap);
 
         if (!(resultLeft instanceof BooleanValue(boolean leftValue))) {
             throw new MyException("BooleanExpression: left operand is not a boolean");

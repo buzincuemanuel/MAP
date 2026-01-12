@@ -12,7 +12,7 @@ public record IfStatement(Expression condition, Statement thenStatement, Stateme
 
     @Override
     public ProgramState execute(ProgramState state) throws MyException {
-        Value value = condition.evaluate(state.getSymTable());
+        Value value = condition.evaluate(state.getSymTable(), state.getHeap());
 
         if (!value.getType().equals(new BoolType())) {
             throw new MyException("Conditional expression is not a boolean");

@@ -1,45 +1,62 @@
 package model.state;
 
+import model.exception.MyException;
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
-import model.exception.MyException;
 
 public class MapSymbolTable<V> implements SymbolTable<V> {
-    private final Map<String, V> table = new HashMap<>();
+    private final Map<String, V> map;
+
+    public MapSymbolTable() {
+        this.map = new HashMap<>();
+    }
 
     @Override
     public void setValue(String variableName, V value) throws MyException {
-        if (!isDefined(variableName))
-            throw new MyException("Variable not declared: " + variableName);
-        table.put(variableName, value);
+        if (!map.containsKey(variableName))
+            throw new MyException("Variable " + variableName + " is not declared.");
+        map.put(variableName, value);
     }
 
     @Override
     public boolean isDefined(String variableName) {
-        return table.containsKey(variableName);
+        return map.containsKey(variableName);
     }
 
     @Override
     public V getValue(String variableName) throws MyException {
-        if (!isDefined(variableName))
-            throw new MyException("Variable not declared: " + variableName);
-        return table.get(variableName);
+        if (!map.containsKey(variableName))
+            throw new MyException("Variable " + variableName + " is not defined.");
+        return map.get(variableName);
     }
 
     @Override
-    public void declareVariable(V defaultValue, String variableName) throws MyException {
-        if (isDefined(variableName))
-            throw new MyException("Variable already declared: " + variableName);
-        table.put(variableName, defaultValue);
-    }
-
-    @Override
-    public String toString() {
-        return "SymbolTable{" + table + '}';
+    public void declareVariable(V defaultValue, String variableName) {
+        map.put(variableName, defaultValue);
     }
 
     @Override
     public Map<String, V> getContent() {
-        return table;
+        return map;
+    }
+
+    @Override
+    public Collection<V> values() {
+        return map.values();
+    }
+
+    @Override
+    public SymbolTable<V> deepCopy() {
+        MapSymbolTable<V> newSymTable = new MapSymbolTable<>();
+        for (Map.Entry<String, V> entry : map.entrySet()) {
+            newSymTable.declareVariable(entry.getValue(), entry.getKey());
+        }
+        return newSymTable;
+    }
+
+    @Override
+    public String toString() {
+        return map.toString();
     }
 }

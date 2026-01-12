@@ -13,7 +13,7 @@ import java.io.IOException;
 public record OpenRFileStatement(Expression expression) implements Statement {
     @Override
     public ProgramState execute(ProgramState state) throws MyException {
-        Value val = expression.evaluate(state.getSymTable());
+        Value val = expression.evaluate(state.getSymTable(), state.getHeap());
         if (!val.getType().equals(new StringType()))
             throw new MyException("OpenRFile: Expression is not a string.");
 
