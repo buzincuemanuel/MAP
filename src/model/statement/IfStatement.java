@@ -4,7 +4,9 @@ import model.exception.MyException;
 import model.expression.Expression;
 import model.state.ExecutionStack;
 import model.state.ProgramState;
+import model.state.SymbolTable;
 import model.type.BoolType;
+import model.type.Type;
 import model.value.BooleanValue;
 import model.value.Value;
 
@@ -28,7 +30,19 @@ public record IfStatement(Expression condition, Statement thenStatement, Stateme
             stack.push(elseStatement);
         }
 
-        return state;
+        return null;
+    }
+
+    @Override
+    public SymbolTable<Type> typecheck(SymbolTable<Type> typeEnv) throws MyException {
+        Type typexp = condition.typecheck(typeEnv);
+        if (typexp.equals(new BoolType())) {
+            thenStatement.typecheck(typeEnv.deepCopy());
+            elseStatement.typecheck(typeEnv.deepCopy());
+            return typeEnv;
+        } else {
+            throw new MyException("The condition of IF has not the type bool");
+        }
     }
 
     @Override

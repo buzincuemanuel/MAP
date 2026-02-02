@@ -3,14 +3,14 @@ package model.state;
 import model.exception.MyException;
 import model.value.StringValue;
 import java.io.BufferedReader;
-import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 public class MapFileTable implements IFileTable {
     private final Map<StringValue, BufferedReader> fileTable;
 
     public MapFileTable() {
-        this.fileTable = new HashMap<>();
+        this.fileTable = new ConcurrentHashMap<>();
     }
 
     @Override

@@ -20,7 +20,13 @@ public record VariableDeclarationStatement(String variableName, Type type) imple
 
         symTable.declareVariable(defaultValue, variableName);
 
-        return state;
+        return null;
+    }
+
+    @Override
+    public SymbolTable<Type> typecheck(SymbolTable<Type> typeEnv) throws MyException {
+        typeEnv.declareVariable(type, variableName);
+        return typeEnv;
     }
 
     @Override

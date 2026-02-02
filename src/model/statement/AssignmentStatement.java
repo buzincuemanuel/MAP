@@ -26,7 +26,17 @@ public record AssignmentStatement(String variableName, Expression expression) im
         }
 
         symTable.setValue(variableName, newValue);
-        return state;
+        return null;
+    }
+
+    @Override
+    public SymbolTable<Type> typecheck(SymbolTable<Type> typeEnv) throws MyException {
+        Type typevar = typeEnv.getValue(variableName);
+        Type typexp = expression.typecheck(typeEnv);
+        if (typevar.equals(typexp))
+            return typeEnv;
+        else
+            throw new MyException("Assignment: right hand side and left hand side have different types");
     }
 
     @Override

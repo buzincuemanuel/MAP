@@ -2,8 +2,8 @@ package model.state;
 
 import model.exception.MyException;
 import model.value.Value;
-import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class Heap implements IHeap {
@@ -11,7 +11,7 @@ public class Heap implements IHeap {
     private AtomicInteger freeLocation;
 
     public Heap() {
-        this.map = new HashMap<>();
+        this.map = new ConcurrentHashMap<>();
         this.freeLocation = new AtomicInteger(1);
     }
 
@@ -43,7 +43,7 @@ public class Heap implements IHeap {
 
     @Override
     public void setContent(Map<Integer, Value> content) {
-        this.map = content;
+        this.map = new ConcurrentHashMap<>(content);
     }
 
     @Override

@@ -1,0 +1,80 @@
+
+=== Program State (ID: 3) ===
+ExeStack: ExecutionStack: [(model.type.BoolType@6d311334 a; (model.type.IntType@682a0b20 v; (a = BooleanValue[value=true]; ((IF(VariableExpression[variableName=a]) THEN(v = IntegerValue[value=2])ELSE(v = IntegerValue[value=3])); print(VariableExpression[variableName=v])))))]
+SymTable: {}
+Out: ListOut{elements=[]}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 3) ===
+ExeStack: ExecutionStack: [model.type.BoolType@6d311334 a, (model.type.IntType@682a0b20 v; (a = BooleanValue[value=true]; ((IF(VariableExpression[variableName=a]) THEN(v = IntegerValue[value=2])ELSE(v = IntegerValue[value=3])); print(VariableExpression[variableName=v]))))]
+SymTable: {}
+Out: ListOut{elements=[]}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 3) ===
+ExeStack: ExecutionStack: [(model.type.IntType@682a0b20 v; (a = BooleanValue[value=true]; ((IF(VariableExpression[variableName=a]) THEN(v = IntegerValue[value=2])ELSE(v = IntegerValue[value=3])); print(VariableExpression[variableName=v]))))]
+SymTable: {a=BooleanValue[value=false]}
+Out: ListOut{elements=[]}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 3) ===
+ExeStack: ExecutionStack: [model.type.IntType@682a0b20 v, (a = BooleanValue[value=true]; ((IF(VariableExpression[variableName=a]) THEN(v = IntegerValue[value=2])ELSE(v = IntegerValue[value=3])); print(VariableExpression[variableName=v])))]
+SymTable: {a=BooleanValue[value=false]}
+Out: ListOut{elements=[]}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 3) ===
+ExeStack: ExecutionStack: [(a = BooleanValue[value=true]; ((IF(VariableExpression[variableName=a]) THEN(v = IntegerValue[value=2])ELSE(v = IntegerValue[value=3])); print(VariableExpression[variableName=v])))]
+SymTable: {a=BooleanValue[value=false], v=IntegerValue[value=0]}
+Out: ListOut{elements=[]}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 3) ===
+ExeStack: ExecutionStack: [a = BooleanValue[value=true], ((IF(VariableExpression[variableName=a]) THEN(v = IntegerValue[value=2])ELSE(v = IntegerValue[value=3])); print(VariableExpression[variableName=v]))]
+SymTable: {a=BooleanValue[value=false], v=IntegerValue[value=0]}
+Out: ListOut{elements=[]}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 3) ===
+ExeStack: ExecutionStack: [((IF(VariableExpression[variableName=a]) THEN(v = IntegerValue[value=2])ELSE(v = IntegerValue[value=3])); print(VariableExpression[variableName=v]))]
+SymTable: {a=BooleanValue[value=true], v=IntegerValue[value=0]}
+Out: ListOut{elements=[]}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 3) ===
+ExeStack: ExecutionStack: [(IF(VariableExpression[variableName=a]) THEN(v = IntegerValue[value=2])ELSE(v = IntegerValue[value=3])), print(VariableExpression[variableName=v])]
+SymTable: {a=BooleanValue[value=true], v=IntegerValue[value=0]}
+Out: ListOut{elements=[]}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 3) ===
+ExeStack: ExecutionStack: [v = IntegerValue[value=2], print(VariableExpression[variableName=v])]
+SymTable: {a=BooleanValue[value=true], v=IntegerValue[value=0]}
+Out: ListOut{elements=[]}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 3) ===
+ExeStack: ExecutionStack: [print(VariableExpression[variableName=v])]
+SymTable: {a=BooleanValue[value=true], v=IntegerValue[value=2]}
+Out: ListOut{elements=[]}
+FileTable: []
+Heap: {}
+

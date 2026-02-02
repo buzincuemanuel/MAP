@@ -1,58 +1,52 @@
 package model.state;
 
-import model.exception.MyException;
-import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
-public class MapSymbolTable<V> implements SymbolTable<V> {
-    private final Map<String, V> map;
+public class MapSymbolTable<T> implements SymbolTable<T> {
+    private final Map<String, T> map;
 
     public MapSymbolTable() {
         this.map = new HashMap<>();
     }
 
     @Override
-    public void setValue(String variableName, V value) throws MyException {
-        if (!map.containsKey(variableName))
-            throw new MyException("Variable " + variableName + " is not declared.");
-        map.put(variableName, value);
+    public void add(String id, T value) {
+        map.put(id, value);
     }
 
     @Override
-    public boolean isDefined(String variableName) {
-        return map.containsKey(variableName);
+    public void setValue(String id, T value) {
+        map.put(id, value);
     }
 
     @Override
-    public V getValue(String variableName) throws MyException {
-        if (!map.containsKey(variableName))
-            throw new MyException("Variable " + variableName + " is not defined.");
-        return map.get(variableName);
+    public boolean isDefined(String id) {
+        return map.containsKey(id);
     }
 
     @Override
-    public void declareVariable(V defaultValue, String variableName) {
-        map.put(variableName, defaultValue);
+    public T getValue(String id) {
+        return map.get(id);
     }
 
     @Override
-    public Map<String, V> getContent() {
-        return map;
+    public void declareVariable(T value, String id) {
+        map.put(id, value);
     }
 
     @Override
-    public Collection<V> values() {
-        return map.values();
-    }
-
-    @Override
-    public SymbolTable<V> deepCopy() {
-        MapSymbolTable<V> newSymTable = new MapSymbolTable<>();
-        for (Map.Entry<String, V> entry : map.entrySet()) {
-            newSymTable.declareVariable(entry.getValue(), entry.getKey());
+    public SymbolTable<T> deepCopy() {
+        MapSymbolTable<T> newSymTable = new MapSymbolTable<>();
+        for (Map.Entry<String, T> entry : map.entrySet()) {
+            newSymTable.add(entry.getKey(), entry.getValue());
         }
         return newSymTable;
+    }
+
+    @Override
+    public Map<String, T> getContent() {
+        return map;
     }
 
     @Override

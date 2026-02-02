@@ -36,7 +36,17 @@ public record NewStatement(String varName, Expression expression) implements Sta
         int newAddress = heap.allocate(evaluated);
         symTable.setValue(varName, new RefValue(newAddress, locationType));
 
-        return state;
+        return null;
+    }
+
+    @Override
+    public SymbolTable<Type> typecheck(SymbolTable<Type> typeEnv) throws MyException {
+        Type typevar = typeEnv.getValue(varName);
+        Type typexp = expression.typecheck(typeEnv);
+        if (typevar.equals(new RefType(typexp)))
+            return typeEnv;
+        else
+            throw new MyException("NEW stmt: right hand side and left hand side have different types");
     }
 
     @Override

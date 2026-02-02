@@ -3,10 +3,9 @@ package model.state;
 import model.exception.MyException;
 import model.statement.Statement;
 import model.value.Value;
-import java.util.concurrent.atomic.AtomicInteger;
 
 public class ProgramState {
-    private static final AtomicInteger lastId = new AtomicInteger(0);
+    private static int lastId = 0;
     private final int id;
 
     private final ExecutionStack<Statement> exeStack;
@@ -22,7 +21,7 @@ public class ProgramState {
                         IFileTable fileTable,
                         IHeap heap,
                         Statement originalProgram) {
-        this.id = lastId.incrementAndGet();
+        this.id = getNextId();
         this.exeStack = exeStack;
         this.symTable = symTable;
         this.out = out;
@@ -35,19 +34,22 @@ public class ProgramState {
         }
     }
 
-    // fork
     public ProgramState(ExecutionStack<Statement> exeStack,
                         SymbolTable<Value> symTable,
                         Out<Value> out,
                         IFileTable fileTable,
                         IHeap heap) {
-        this.id = lastId.incrementAndGet();
+        this.id = getNextId();
         this.exeStack = exeStack;
         this.symTable = symTable;
         this.out = out;
         this.fileTable = fileTable;
         this.heap = heap;
         this.originalProgram = null;
+    }
+
+    private static synchronized int getNextId() {
+        return ++lastId;
     }
 
     public ExecutionStack<Statement> getExeStack() { return exeStack; }

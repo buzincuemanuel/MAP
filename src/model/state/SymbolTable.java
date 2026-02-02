@@ -1,17 +1,13 @@
 package model.state;
 
-import model.exception.MyException;
 import java.util.Map;
-import java.util.Collection; // Ai nevoie si de asta pentru Garbage Collector mai tarziu
 
-public interface SymbolTable<V> {
-    void setValue(String variableName, V value) throws MyException;
-    boolean isDefined(String variableName);
-    V getValue(String variableName) throws MyException;
-    void declareVariable(V defaultValue, String variableName) throws MyException;
-    Map<String, V> getContent();
-
-    SymbolTable<V> deepCopy();
-
-    Collection<V> values();
+public interface SymbolTable<T> {
+    void add(String id, T value);
+    void setValue(String id, T value);
+    boolean isDefined(String id);
+    T getValue(String id);
+    void declareVariable(T value, String id);
+    SymbolTable<T> deepCopy();
+    Map<String, T> getContent();
 }

@@ -1,0 +1,40 @@
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [(model.type.IntType@87aac27 v; (v = IntegerValue[value=2]; print(VariableExpression[variableName=v])))]
+SymTable: {}
+Out: ListOut{elements=[]}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [model.type.IntType@87aac27 v, (v = IntegerValue[value=2]; print(VariableExpression[variableName=v]))]
+SymTable: {}
+Out: ListOut{elements=[]}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [(v = IntegerValue[value=2]; print(VariableExpression[variableName=v]))]
+SymTable: {v=IntegerValue[value=0]}
+Out: ListOut{elements=[]}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [v = IntegerValue[value=2], print(VariableExpression[variableName=v])]
+SymTable: {v=IntegerValue[value=0]}
+Out: ListOut{elements=[]}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [print(VariableExpression[variableName=v])]
+SymTable: {v=IntegerValue[value=2]}
+Out: ListOut{elements=[]}
+FileTable: []
+Heap: {}
+

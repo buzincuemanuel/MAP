@@ -2,6 +2,7 @@ package model.statement;
 
 import model.exception.MyException;
 import model.state.*;
+import model.type.Type;
 import model.value.Value;
 
 public class ForkStatement implements Statement {
@@ -23,6 +24,12 @@ public class ForkStatement implements Statement {
         Out<Value> out = state.getOut();
 
         return new ProgramState(newStack, newSymTable, out, fileTable, heap);
+    }
+
+    @Override
+    public SymbolTable<Type> typecheck(SymbolTable<Type> typeEnv) throws MyException {
+        statement.typecheck(typeEnv.deepCopy());
+        return typeEnv;
     }
 
     @Override

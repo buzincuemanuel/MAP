@@ -1,8 +1,9 @@
 package model.expression;
 
+import model.exception.MyException;
 import model.state.IHeap;
 import model.state.SymbolTable;
-import model.exception.MyException;
+import model.type.Type;
 import model.value.Value;
 
 public class ValueExpression implements Expression {
@@ -18,8 +19,12 @@ public class ValueExpression implements Expression {
     }
 
     @Override
+    public Type typecheck(SymbolTable<Type> typeEnv) throws MyException {
+        return val.getType();
+    }
+
+    @Override
     public String toString() {
         return val.toString();
     }
 }
-

@@ -3,8 +3,10 @@ package model.expression;
 import model.exception.MyException;
 import model.state.IHeap;
 import model.state.SymbolTable;
-import model.value.Value;
+import model.type.BoolType;
+import model.type.Type;
 import model.value.BooleanValue;
+import model.value.Value;
 
 public record BooleanExpression(Expression left, String operator, Expression right) implements Expression {
 
@@ -30,5 +32,22 @@ public record BooleanExpression(Expression left, String operator, Expression rig
         };
 
         return new BooleanValue(result);
+    }
+
+    @Override
+    public Type typecheck(SymbolTable<Type> typeEnv) throws MyException {
+        Type typ1, typ2;
+        typ1 = left.typecheck(typeEnv);
+        typ2 = right.typecheck(typeEnv);
+
+        if (typ1.equals(new BoolType())) {
+            if (typ2.equals(new BoolType())) {
+                return new BoolType();
+            } else {
+                throw new MyException("BooleanExpression: second operand is not a boolean");
+            }
+        } else {
+            throw new MyException("BooleanExpression: first operand is not a boolean");
+        }
     }
 }

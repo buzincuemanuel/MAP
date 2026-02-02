@@ -3,7 +3,9 @@ package model.statement;
 import model.exception.MyException;
 import model.expression.Expression;
 import model.state.ProgramState;
+import model.state.SymbolTable;
 import model.type.StringType;
+import model.type.Type;
 import model.value.StringValue;
 import model.value.Value;
 import java.io.BufferedReader;
@@ -27,8 +29,19 @@ public record OpenRFileStatement(Expression expression) implements Statement {
         } catch (IOException e) {
             throw new MyException("OpenRFile: " + e.getMessage());
         }
-        return state;
+        return null;
     }
+
+    @Override
+    public SymbolTable<Type> typecheck(SymbolTable<Type> typeEnv) throws MyException {
+        Type typexp = expression.typecheck(typeEnv);
+        if (typexp.equals(new StringType())) {
+            return typeEnv;
+        } else {
+            throw new MyException("OpenRFile: The expression must be a string");
+        }
+    }
+
     @Override
     public String toString() { return "open(" + expression + ")"; }
 }

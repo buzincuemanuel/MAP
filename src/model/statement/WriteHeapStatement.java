@@ -6,6 +6,7 @@ import model.state.IHeap;
 import model.state.ProgramState;
 import model.state.SymbolTable;
 import model.type.RefType;
+import model.type.Type;
 import model.value.RefValue;
 import model.value.Value;
 
@@ -36,7 +37,17 @@ public record WriteHeapStatement(String varName, Expression expression) implemen
         }
 
         heap.update(refVal.getAddr(), evaluated);
-        return state;
+        return null;
+    }
+
+    @Override
+    public SymbolTable<Type> typecheck(SymbolTable<Type> typeEnv) throws MyException {
+        Type typevar = typeEnv.getValue(varName);
+        Type typexp = expression.typecheck(typeEnv);
+        if (typevar.equals(new RefType(typexp)))
+            return typeEnv;
+        else
+            throw new MyException("WriteHeap: right hand side and left hand side have different types");
     }
 
     @Override

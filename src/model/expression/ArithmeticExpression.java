@@ -3,8 +3,10 @@ package model.expression;
 import model.exception.MyException;
 import model.state.IHeap;
 import model.state.SymbolTable;
-import model.value.Value;
+import model.type.IntType;
+import model.type.Type;
 import model.value.IntegerValue;
+import model.value.Value;
 
 public record ArithmeticExpression(Expression left, char operator, Expression right) implements Expression {
 
@@ -35,5 +37,27 @@ public record ArithmeticExpression(Expression left, char operator, Expression ri
         };
 
         return new IntegerValue(result);
+    }
+
+    @Override
+    public Type typecheck(SymbolTable<Type> typeEnv) throws MyException {
+        Type typ1, typ2;
+        typ1 = left.typecheck(typeEnv);
+        typ2 = right.typecheck(typeEnv);
+
+        if (typ1.equals(new IntType())) {
+            if (typ2.equals(new IntType())) {
+                return new IntType();
+            } else {
+                throw new MyException("ArithmeticExpression: second operand is not an integer");
+            }
+        } else {
+            throw new MyException("ArithmeticExpression: first operand is not an integer");
+        }
+    }
+
+    @Override
+    public String toString() {
+        return left + " " + operator + " " + right;
     }
 }

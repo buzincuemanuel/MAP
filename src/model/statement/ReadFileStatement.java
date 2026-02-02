@@ -3,8 +3,10 @@ package model.statement;
 import model.exception.MyException;
 import model.expression.Expression;
 import model.state.ProgramState;
+import model.state.SymbolTable;
 import model.type.IntType;
 import model.type.StringType;
+import model.type.Type;
 import model.value.IntegerValue;
 import model.value.StringValue;
 import model.value.Value;
@@ -33,8 +35,23 @@ public record ReadFileStatement(Expression expression, String varName) implement
         } catch (IOException e) {
             throw new MyException("ReadFile: " + e.getMessage());
         }
-        return state;
+        return null;
     }
+
+    @Override
+    public SymbolTable<Type> typecheck(SymbolTable<Type> typeEnv) throws MyException {
+        Type typexp = expression.typecheck(typeEnv);
+        Type typevar = typeEnv.getValue(varName);
+
+        if (!typexp.equals(new StringType())) {
+            throw new MyException("ReadFile: The expression must be a string");
+        }
+        if (!typevar.equals(new IntType())) {
+            throw new MyException("ReadFile: The variable must be an integer");
+        }
+        return typeEnv;
+    }
+
     @Override
     public String toString() { return "readFile(" + expression + ", " + varName + ")"; }
 }

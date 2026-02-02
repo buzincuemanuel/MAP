@@ -2,6 +2,7 @@ package repository;
 
 import model.exception.MyException;
 import model.state.ProgramState;
+
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -13,8 +14,9 @@ public class Repository implements IRepository {
     private List<ProgramState> programStates;
     private final String logFilePath;
 
-    public Repository(String logFilePath) {
+    public Repository(ProgramState programState, String logFilePath) {
         this.programStates = new ArrayList<>();
+        this.programStates.add(programState);
         this.logFilePath = logFilePath;
     }
 
@@ -24,30 +26,33 @@ public class Repository implements IRepository {
     }
 
     @Override
-    public void setPrgList(List<ProgramState> list) {
-        this.programStates = list;
+    public void setPrgList(List<ProgramState> programStates) {
+        this.programStates = programStates;
     }
 
     @Override
-    public void addPrgState(ProgramState prg) {
-        programStates.add(prg);
+    public void addPrgState(ProgramState programState) {
+        this.programStates.add(programState);
     }
 
     @Override
-    public void logPrgStateExec(ProgramState prgState) throws MyException {
-        try (PrintWriter logFile = new PrintWriter(new BufferedWriter(new FileWriter(logFilePath, true)))) {
-            logFile.println(prgState.toString());
+    public void logPrgStateExec(ProgramState programState) throws MyException {
+        try {
+            PrintWriter logFile = new PrintWriter(new BufferedWriter(new FileWriter(logFilePath, true)));
+            logFile.println(programState.toString());
+            logFile.close();
         } catch (IOException e) {
-            throw new MyException("Log error: " + e.getMessage());
+            throw new MyException(e.getMessage());
         }
     }
 
     @Override
     public void clearLogFile() throws MyException {
-        try (PrintWriter logFile = new PrintWriter(new BufferedWriter(new FileWriter(logFilePath, false)))) {
-            logFile.print("");
+        try {
+            PrintWriter logFile = new PrintWriter(new BufferedWriter(new FileWriter(logFilePath, false)));
+            logFile.close();
         } catch (IOException e) {
-            throw new MyException("Log error: " + e.getMessage());
+            throw new MyException(e.getMessage());
         }
     }
 }

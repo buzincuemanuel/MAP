@@ -91,3 +91,75 @@ Out:
 IntegerValue[value=20]
 FileTable:
 ---------------------------------
+
+=== Program State (ID: 2) ===
+ExeStack: ExecutionStack: [(model.type.IntType@eed1f14 a; (model.type.IntType@7229724f b; (a = IntegerValue[value=2] + IntegerValue[value=3] * IntegerValue[value=5]; (b = VariableExpression[variableName=a] + IntegerValue[value=1]; print(VariableExpression[variableName=b])))))]
+SymTable: {}
+Out: ListOut{elements=[]}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 2) ===
+ExeStack: ExecutionStack: [model.type.IntType@eed1f14 a, (model.type.IntType@7229724f b; (a = IntegerValue[value=2] + IntegerValue[value=3] * IntegerValue[value=5]; (b = VariableExpression[variableName=a] + IntegerValue[value=1]; print(VariableExpression[variableName=b]))))]
+SymTable: {}
+Out: ListOut{elements=[]}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 2) ===
+ExeStack: ExecutionStack: [(model.type.IntType@7229724f b; (a = IntegerValue[value=2] + IntegerValue[value=3] * IntegerValue[value=5]; (b = VariableExpression[variableName=a] + IntegerValue[value=1]; print(VariableExpression[variableName=b]))))]
+SymTable: {a=IntegerValue[value=0]}
+Out: ListOut{elements=[]}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 2) ===
+ExeStack: ExecutionStack: [model.type.IntType@7229724f b, (a = IntegerValue[value=2] + IntegerValue[value=3] * IntegerValue[value=5]; (b = VariableExpression[variableName=a] + IntegerValue[value=1]; print(VariableExpression[variableName=b])))]
+SymTable: {a=IntegerValue[value=0]}
+Out: ListOut{elements=[]}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 2) ===
+ExeStack: ExecutionStack: [(a = IntegerValue[value=2] + IntegerValue[value=3] * IntegerValue[value=5]; (b = VariableExpression[variableName=a] + IntegerValue[value=1]; print(VariableExpression[variableName=b])))]
+SymTable: {a=IntegerValue[value=0], b=IntegerValue[value=0]}
+Out: ListOut{elements=[]}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 2) ===
+ExeStack: ExecutionStack: [a = IntegerValue[value=2] + IntegerValue[value=3] * IntegerValue[value=5], (b = VariableExpression[variableName=a] + IntegerValue[value=1]; print(VariableExpression[variableName=b]))]
+SymTable: {a=IntegerValue[value=0], b=IntegerValue[value=0]}
+Out: ListOut{elements=[]}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 2) ===
+ExeStack: ExecutionStack: [(b = VariableExpression[variableName=a] + IntegerValue[value=1]; print(VariableExpression[variableName=b]))]
+SymTable: {a=IntegerValue[value=17], b=IntegerValue[value=0]}
+Out: ListOut{elements=[]}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 2) ===
+ExeStack: ExecutionStack: [b = VariableExpression[variableName=a] + IntegerValue[value=1], print(VariableExpression[variableName=b])]
+SymTable: {a=IntegerValue[value=17], b=IntegerValue[value=0]}
+Out: ListOut{elements=[]}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 2) ===
+ExeStack: ExecutionStack: [print(VariableExpression[variableName=b])]
+SymTable: {a=IntegerValue[value=17], b=IntegerValue[value=18]}
+Out: ListOut{elements=[]}
+FileTable: []
+Heap: {}
+
