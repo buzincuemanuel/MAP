@@ -1,0 +1,35 @@
+plugins {
+    id 'java'
+    id 'application'
+    // 1. Plugin-ul esențial pentru JavaFX
+    id 'org.openjfx.javafxplugin' version '0.1.0'
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+// 2. Configurarea versiunii de JavaFX
+// Dacă folosești Java 21, schimbă version in "21"
+javafx {
+    version = "17.0.6"
+    modules = [ 'javafx.controls', 'javafx.fxml' ]
+}
+
+dependencies {
+    // Librăriile de test (JUnit)
+    testImplementation platform('org.junit.jupiter:junit-jupiter:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+application {
+    // 3. Asigură-te că pachetul tău este 'buzz' și clasa 'Main'
+    mainClass = 'buzz.Main'
+}
