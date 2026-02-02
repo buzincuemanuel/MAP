@@ -21,19 +21,44 @@ public class Controller {
         this.repo = repo;
     }
 
-    public void allStep() throws MyException {
+    public IRepository getRepository() {
+        return repo;
+    }
+
+    // Metoda pentru GUI: Execută un singur pas
+    public void oneStep() throws MyException {
         executor = Executors.newFixedThreadPool(2);
         List<ProgramState> prgList = removeCompletedPrg(repo.getPrgList());
 
-        while (prgList.size() > 0) {
+        if (prgList.size() > 0) {
+            // Garbage Collection
             List<Integer> symTableAddr = getAddrFromAllSymTables(prgList);
             Map<Integer, Value> newHeap = safeGarbageCollector(symTableAddr, prgList.get(0).getHeap().getContent());
             prgList.forEach(p -> p.getHeap().setContent(newHeap));
 
+            // Execuție un pas
+            oneStepForAllPrg(prgList);
+
+            // Eliminare programe finalizate
+            prgList = removeCompletedPrg(repo.getPrgList());
+            repo.setPrgList(prgList);
+        }
+
+        executor.shutdownNow();
+    }
+
+    // --- Păstrează metodele existente din fișierul tău original (allStep, oneStepForAllPrg, etc.) ---
+
+    public void allStep() throws MyException {
+        executor = Executors.newFixedThreadPool(2);
+        List<ProgramState> prgList = removeCompletedPrg(repo.getPrgList());
+        while (prgList.size() > 0) {
+            List<Integer> symTableAddr = getAddrFromAllSymTables(prgList);
+            Map<Integer, Value> newHeap = safeGarbageCollector(symTableAddr, prgList.get(0).getHeap().getContent());
+            prgList.forEach(p -> p.getHeap().setContent(newHeap));
             oneStepForAllPrg(prgList);
             prgList = removeCompletedPrg(repo.getPrgList());
         }
-
         executor.shutdownNow();
         repo.setPrgList(prgList);
     }
@@ -63,12 +88,10 @@ public class Controller {
                     })
                     .filter(Objects::nonNull)
                     .collect(Collectors.toList());
-
             prgList.addAll(newPrgList);
         } catch (InterruptedException e) {
             throw new MyException(e.getMessage());
         }
-
         repo.setPrgList(prgList);
     }
 
