@@ -10,4 +10,6 @@ public record BooleanValue(boolean value) implements Value{
         return new BoolType();
 
     }
+
+
 }

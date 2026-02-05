@@ -3,6 +3,7 @@ package buzz.model.state;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class ListOut<T> implements Out<T> {
     private final List<T> elements;
@@ -18,7 +19,9 @@ public class ListOut<T> implements Out<T> {
 
     @Override
     public String toString() {
-        return "ListOut{" + "elements=" + elements + '}';
+        return "{" + elements.stream()
+                .map(Object::toString)
+                .collect(Collectors.joining(", ")) + "}";
     }
 
     @Override

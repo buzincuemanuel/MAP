@@ -26,7 +26,6 @@ public class GUI extends Application {
 
     @Override
     public void start(Stage primaryStage) {
-        // --- Setup Selector Window ---
         VBox root = new VBox(10);
         root.setPadding(new Insets(20));
         root.setAlignment(Pos.CENTER);
@@ -45,18 +44,14 @@ public class GUI extends Application {
 
             int id = programsListView.getSelectionModel().getSelectedIndex() + 1;
             try {
-                // Initializare MVC pentru programul selectat
                 selectedStmt.typecheck(new MapSymbolTable<>());
                 ProgramState prg = new ProgramState(new ListExecutionStack<>(), new MapSymbolTable<>(), new ListOut<>(), new MapFileTable(), new Heap(), selectedStmt);
                 IRepository repo = new Repository(prg, "log" + id + ".txt");
                 Controller controller = new Controller(repo);
 
-                // Deschide fereastra de execuție
                 ProgramExecutor executorWindow = new ProgramExecutor(controller);
                 executorWindow.show();
 
-                // Opțional: închide fereastra de selecție
-                // primaryStage.close();
 
             } catch (Exception ex) {
                 showAlert("Validation Error", ex.getMessage());

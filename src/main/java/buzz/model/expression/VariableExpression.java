@@ -20,4 +20,9 @@ public record VariableExpression(String variableName) implements Expression {
     public Type typecheck(SymbolTable<Type> typeEnv) throws MyException {
         return typeEnv.getValue(variableName);
     }
+
+    @Override
+    public String toString() {
+        return variableName;
+    }
 }

@@ -9,5 +9,9 @@ public record IntegerValue(int value) implements Value {
         return new IntType();
     }
 
+    @Override
+    public String toString() {
+        return String.valueOf(value);
+    }
 
 }

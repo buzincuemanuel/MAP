@@ -25,29 +25,29 @@ public class Controller {
         return repo;
     }
 
-    // Metoda pentru GUI: Execută un singur pas
     public void oneStep() throws MyException {
         executor = Executors.newFixedThreadPool(2);
         List<ProgramState> prgList = removeCompletedPrg(repo.getPrgList());
 
         if (prgList.size() > 0) {
-            // Garbage Collection
             List<Integer> symTableAddr = getAddrFromAllSymTables(prgList);
             Map<Integer, Value> newHeap = safeGarbageCollector(symTableAddr, prgList.get(0).getHeap().getContent());
             prgList.forEach(p -> p.getHeap().setContent(newHeap));
 
-            // Execuție un pas
             oneStepForAllPrg(prgList);
 
-            // Eliminare programe finalizate
-            prgList = removeCompletedPrg(repo.getPrgList());
-            repo.setPrgList(prgList);
+            prgList.forEach(p -> {
+                try {
+                    repo.logPrgStateExec(p);
+                } catch (MyException e) {
+                    System.out.println(e.getMessage());
+                }
+            });
         }
 
+        repo.setPrgList(prgList);
         executor.shutdownNow();
     }
-
-    // --- Păstrează metodele existente din fișierul tău original (allStep, oneStepForAllPrg, etc.) ---
 
     public void allStep() throws MyException {
         executor = Executors.newFixedThreadPool(2);

@@ -1,165 +1,5 @@
 
-=== Program State (ID: 4) ===
-ExeStack: ExecutionStack: [(main.java.buzz.model.type.IntType@58372a00 v; (Ref(main.java.buzz.model.type.IntType@4dd8dc3) a; (v = IntegerValue[value=10]; (new(a, IntegerValue[value=22]); (fork((wH(a, IntegerValue[value=30]); (v = IntegerValue[value=32]; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))); (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a]))))))))]
-SymTable: {}
-Out: ListOut{elements=[]}
-FileTable: []
-Heap: {}
-
-
-=== Program State (ID: 4) ===
-ExeStack: ExecutionStack: [main.java.buzz.model.type.IntType@58372a00 v, (Ref(main.java.buzz.model.type.IntType@4dd8dc3) a; (v = IntegerValue[value=10]; (new(a, IntegerValue[value=22]); (fork((wH(a, IntegerValue[value=30]); (v = IntegerValue[value=32]; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))); (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))))]
-SymTable: {}
-Out: ListOut{elements=[]}
-FileTable: []
-Heap: {}
-
-
-=== Program State (ID: 4) ===
-ExeStack: ExecutionStack: [(Ref(main.java.buzz.model.type.IntType@4dd8dc3) a; (v = IntegerValue[value=10]; (new(a, IntegerValue[value=22]); (fork((wH(a, IntegerValue[value=30]); (v = IntegerValue[value=32]; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))); (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))))]
-SymTable: {v=IntegerValue[value=0]}
-Out: ListOut{elements=[]}
-FileTable: []
-Heap: {}
-
-
-=== Program State (ID: 4) ===
-ExeStack: ExecutionStack: [Ref(main.java.buzz.model.type.IntType@4dd8dc3) a, (v = IntegerValue[value=10]; (new(a, IntegerValue[value=22]); (fork((wH(a, IntegerValue[value=30]); (v = IntegerValue[value=32]; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))); (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a]))))))]
-SymTable: {v=IntegerValue[value=0]}
-Out: ListOut{elements=[]}
-FileTable: []
-Heap: {}
-
-
-=== Program State (ID: 4) ===
-ExeStack: ExecutionStack: [(v = IntegerValue[value=10]; (new(a, IntegerValue[value=22]); (fork((wH(a, IntegerValue[value=30]); (v = IntegerValue[value=32]; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))); (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a]))))))]
-SymTable: {a=(0, main.java.buzz.model.type.IntType@4dd8dc3), v=IntegerValue[value=0]}
-Out: ListOut{elements=[]}
-FileTable: []
-Heap: {}
-
-
-=== Program State (ID: 4) ===
-ExeStack: ExecutionStack: [v = IntegerValue[value=10], (new(a, IntegerValue[value=22]); (fork((wH(a, IntegerValue[value=30]); (v = IntegerValue[value=32]; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))); (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))]
-SymTable: {a=(0, main.java.buzz.model.type.IntType@4dd8dc3), v=IntegerValue[value=0]}
-Out: ListOut{elements=[]}
-FileTable: []
-Heap: {}
-
-
-=== Program State (ID: 4) ===
-ExeStack: ExecutionStack: [(new(a, IntegerValue[value=22]); (fork((wH(a, IntegerValue[value=30]); (v = IntegerValue[value=32]; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))); (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))]
-SymTable: {a=(0, main.java.buzz.model.type.IntType@4dd8dc3), v=IntegerValue[value=10]}
-Out: ListOut{elements=[]}
-FileTable: []
-Heap: {}
-
-
-=== Program State (ID: 4) ===
-ExeStack: ExecutionStack: [new(a, IntegerValue[value=22]), (fork((wH(a, IntegerValue[value=30]); (v = IntegerValue[value=32]; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))); (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a]))))]
-SymTable: {a=(0, main.java.buzz.model.type.IntType@4dd8dc3), v=IntegerValue[value=10]}
-Out: ListOut{elements=[]}
-FileTable: []
-Heap: {}
-
-
-=== Program State (ID: 4) ===
-ExeStack: ExecutionStack: [(fork((wH(a, IntegerValue[value=30]); (v = IntegerValue[value=32]; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))); (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a]))))]
-SymTable: {a=(1, main.java.buzz.model.type.IntType@4dd8dc3), v=IntegerValue[value=10]}
-Out: ListOut{elements=[]}
-FileTable: []
-Heap: {1=IntegerValue[value=22]}
-
-
-=== Program State (ID: 4) ===
-ExeStack: ExecutionStack: [fork((wH(a, IntegerValue[value=30]); (v = IntegerValue[value=32]; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))), (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))]
-SymTable: {a=(1, main.java.buzz.model.type.IntType@4dd8dc3), v=IntegerValue[value=10]}
-Out: ListOut{elements=[]}
-FileTable: []
-Heap: {1=IntegerValue[value=22]}
-
-
-=== Program State (ID: 4) ===
-ExeStack: ExecutionStack: [(print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))]
-SymTable: {a=(1, main.java.buzz.model.type.IntType@4dd8dc3), v=IntegerValue[value=10]}
-Out: ListOut{elements=[]}
-FileTable: []
-Heap: {1=IntegerValue[value=22]}
-
-
-=== Program State (ID: 5) ===
-ExeStack: ExecutionStack: [(wH(a, IntegerValue[value=30]); (v = IntegerValue[value=32]; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))]
-SymTable: {a=(1, main.java.buzz.model.type.IntType@4dd8dc3), v=IntegerValue[value=10]}
-Out: ListOut{elements=[]}
-FileTable: []
-Heap: {1=IntegerValue[value=22]}
-
-
-=== Program State (ID: 4) ===
-ExeStack: ExecutionStack: [print(VariableExpression[variableName=v]), print(rH(VariableExpression[variableName=a]))]
-SymTable: {a=(1, main.java.buzz.model.type.IntType@4dd8dc3), v=IntegerValue[value=10]}
-Out: ListOut{elements=[]}
-FileTable: []
-Heap: {1=IntegerValue[value=22]}
-
-
-=== Program State (ID: 5) ===
-ExeStack: ExecutionStack: [wH(a, IntegerValue[value=30]), (v = IntegerValue[value=32]; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a]))))]
-SymTable: {a=(1, main.java.buzz.model.type.IntType@4dd8dc3), v=IntegerValue[value=10]}
-Out: ListOut{elements=[]}
-FileTable: []
-Heap: {1=IntegerValue[value=22]}
-
-
-=== Program State (ID: 4) ===
-ExeStack: ExecutionStack: [print(rH(VariableExpression[variableName=a]))]
-SymTable: {a=(1, main.java.buzz.model.type.IntType@4dd8dc3), v=IntegerValue[value=10]}
-Out: ListOut{elements=[IntegerValue[value=10]]}
-FileTable: []
-Heap: {1=IntegerValue[value=30]}
-
-
-=== Program State (ID: 5) ===
-ExeStack: ExecutionStack: [(v = IntegerValue[value=32]; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a]))))]
-SymTable: {a=(1, main.java.buzz.model.type.IntType@4dd8dc3), v=IntegerValue[value=10]}
-Out: ListOut{elements=[IntegerValue[value=10]]}
-FileTable: []
-Heap: {1=IntegerValue[value=30]}
-
-
-=== Program State (ID: 5) ===
-ExeStack: ExecutionStack: [v = IntegerValue[value=32], (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))]
-SymTable: {a=(1, main.java.buzz.model.type.IntType@4dd8dc3), v=IntegerValue[value=10]}
-Out: ListOut{elements=[IntegerValue[value=10], IntegerValue[value=30]]}
-FileTable: []
-Heap: {1=IntegerValue[value=30]}
-
-
-=== Program State (ID: 5) ===
-ExeStack: ExecutionStack: [(print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))]
-SymTable: {a=(1, main.java.buzz.model.type.IntType@4dd8dc3), v=IntegerValue[value=32]}
-Out: ListOut{elements=[IntegerValue[value=10], IntegerValue[value=30]]}
-FileTable: []
-Heap: {1=IntegerValue[value=30]}
-
-
-=== Program State (ID: 5) ===
-ExeStack: ExecutionStack: [print(VariableExpression[variableName=v]), print(rH(VariableExpression[variableName=a]))]
-SymTable: {a=(1, main.java.buzz.model.type.IntType@4dd8dc3), v=IntegerValue[value=32]}
-Out: ListOut{elements=[IntegerValue[value=10], IntegerValue[value=30]]}
-FileTable: []
-Heap: {1=IntegerValue[value=30]}
-
-
-=== Program State (ID: 5) ===
-ExeStack: ExecutionStack: [print(rH(VariableExpression[variableName=a]))]
-SymTable: {a=(1, main.java.buzz.model.type.IntType@4dd8dc3), v=IntegerValue[value=32]}
-Out: ListOut{elements=[IntegerValue[value=10], IntegerValue[value=30], IntegerValue[value=32]]}
-FileTable: []
-Heap: {1=IntegerValue[value=30]}
-
-
-=== Program State (ID: 2) ===
+=== Program State (ID: 1) ===
 ExeStack: ExecutionStack: [(buzz.model.type.IntType@d84efd8 v; (Ref(buzz.model.type.IntType@4cfcf9be) a; (v = IntegerValue[value=10]; (new(a, IntegerValue[value=22]); (fork((wH(a, IntegerValue[value=30]); (v = IntegerValue[value=32]; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))); (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a]))))))))]
 SymTable: {}
 Out: ListOut{elements=[]}
@@ -167,7 +7,7 @@ FileTable: []
 Heap: {}
 
 
-=== Program State (ID: 2) ===
+=== Program State (ID: 1) ===
 ExeStack: ExecutionStack: [buzz.model.type.IntType@d84efd8 v, (Ref(buzz.model.type.IntType@4cfcf9be) a; (v = IntegerValue[value=10]; (new(a, IntegerValue[value=22]); (fork((wH(a, IntegerValue[value=30]); (v = IntegerValue[value=32]; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))); (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))))]
 SymTable: {}
 Out: ListOut{elements=[]}
@@ -175,7 +15,7 @@ FileTable: []
 Heap: {}
 
 
-=== Program State (ID: 2) ===
+=== Program State (ID: 1) ===
 ExeStack: ExecutionStack: [(Ref(buzz.model.type.IntType@4cfcf9be) a; (v = IntegerValue[value=10]; (new(a, IntegerValue[value=22]); (fork((wH(a, IntegerValue[value=30]); (v = IntegerValue[value=32]; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))); (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))))]
 SymTable: {v=IntegerValue[value=0]}
 Out: ListOut{elements=[]}
@@ -183,7 +23,7 @@ FileTable: []
 Heap: {}
 
 
-=== Program State (ID: 2) ===
+=== Program State (ID: 1) ===
 ExeStack: ExecutionStack: [Ref(buzz.model.type.IntType@4cfcf9be) a, (v = IntegerValue[value=10]; (new(a, IntegerValue[value=22]); (fork((wH(a, IntegerValue[value=30]); (v = IntegerValue[value=32]; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))); (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a]))))))]
 SymTable: {v=IntegerValue[value=0]}
 Out: ListOut{elements=[]}
@@ -191,7 +31,7 @@ FileTable: []
 Heap: {}
 
 
-=== Program State (ID: 2) ===
+=== Program State (ID: 1) ===
 ExeStack: ExecutionStack: [(v = IntegerValue[value=10]; (new(a, IntegerValue[value=22]); (fork((wH(a, IntegerValue[value=30]); (v = IntegerValue[value=32]; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))); (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a]))))))]
 SymTable: {a=(0, buzz.model.type.IntType@4cfcf9be), v=IntegerValue[value=0]}
 Out: ListOut{elements=[]}
@@ -199,7 +39,7 @@ FileTable: []
 Heap: {}
 
 
-=== Program State (ID: 2) ===
+=== Program State (ID: 1) ===
 ExeStack: ExecutionStack: [v = IntegerValue[value=10], (new(a, IntegerValue[value=22]); (fork((wH(a, IntegerValue[value=30]); (v = IntegerValue[value=32]; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))); (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))]
 SymTable: {a=(0, buzz.model.type.IntType@4cfcf9be), v=IntegerValue[value=0]}
 Out: ListOut{elements=[]}
@@ -207,7 +47,7 @@ FileTable: []
 Heap: {}
 
 
-=== Program State (ID: 2) ===
+=== Program State (ID: 1) ===
 ExeStack: ExecutionStack: [(new(a, IntegerValue[value=22]); (fork((wH(a, IntegerValue[value=30]); (v = IntegerValue[value=32]; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))); (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))]
 SymTable: {a=(0, buzz.model.type.IntType@4cfcf9be), v=IntegerValue[value=10]}
 Out: ListOut{elements=[]}
@@ -215,7 +55,7 @@ FileTable: []
 Heap: {}
 
 
-=== Program State (ID: 2) ===
+=== Program State (ID: 1) ===
 ExeStack: ExecutionStack: [new(a, IntegerValue[value=22]), (fork((wH(a, IntegerValue[value=30]); (v = IntegerValue[value=32]; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))); (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a]))))]
 SymTable: {a=(0, buzz.model.type.IntType@4cfcf9be), v=IntegerValue[value=10]}
 Out: ListOut{elements=[]}
@@ -223,7 +63,7 @@ FileTable: []
 Heap: {}
 
 
-=== Program State (ID: 2) ===
+=== Program State (ID: 1) ===
 ExeStack: ExecutionStack: [(fork((wH(a, IntegerValue[value=30]); (v = IntegerValue[value=32]; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))); (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a]))))]
 SymTable: {a=(1, buzz.model.type.IntType@4cfcf9be), v=IntegerValue[value=10]}
 Out: ListOut{elements=[]}
@@ -231,7 +71,7 @@ FileTable: []
 Heap: {1=IntegerValue[value=22]}
 
 
-=== Program State (ID: 2) ===
+=== Program State (ID: 1) ===
 ExeStack: ExecutionStack: [fork((wH(a, IntegerValue[value=30]); (v = IntegerValue[value=32]; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))), (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))]
 SymTable: {a=(1, buzz.model.type.IntType@4cfcf9be), v=IntegerValue[value=10]}
 Out: ListOut{elements=[]}
@@ -239,7 +79,7 @@ FileTable: []
 Heap: {1=IntegerValue[value=22]}
 
 
-=== Program State (ID: 2) ===
+=== Program State (ID: 1) ===
 ExeStack: ExecutionStack: [(print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))]
 SymTable: {a=(1, buzz.model.type.IntType@4cfcf9be), v=IntegerValue[value=10]}
 Out: ListOut{elements=[]}
@@ -247,7 +87,7 @@ FileTable: []
 Heap: {1=IntegerValue[value=22]}
 
 
-=== Program State (ID: 3) ===
+=== Program State (ID: 2) ===
 ExeStack: ExecutionStack: [(wH(a, IntegerValue[value=30]); (v = IntegerValue[value=32]; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))]
 SymTable: {a=(1, buzz.model.type.IntType@4cfcf9be), v=IntegerValue[value=10]}
 Out: ListOut{elements=[]}
@@ -255,7 +95,7 @@ FileTable: []
 Heap: {1=IntegerValue[value=22]}
 
 
-=== Program State (ID: 2) ===
+=== Program State (ID: 1) ===
 ExeStack: ExecutionStack: [print(VariableExpression[variableName=v]), print(rH(VariableExpression[variableName=a]))]
 SymTable: {a=(1, buzz.model.type.IntType@4cfcf9be), v=IntegerValue[value=10]}
 Out: ListOut{elements=[]}
@@ -263,7 +103,7 @@ FileTable: []
 Heap: {1=IntegerValue[value=22]}
 
 
-=== Program State (ID: 3) ===
+=== Program State (ID: 2) ===
 ExeStack: ExecutionStack: [wH(a, IntegerValue[value=30]), (v = IntegerValue[value=32]; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a]))))]
 SymTable: {a=(1, buzz.model.type.IntType@4cfcf9be), v=IntegerValue[value=10]}
 Out: ListOut{elements=[]}
@@ -271,7 +111,7 @@ FileTable: []
 Heap: {1=IntegerValue[value=22]}
 
 
-=== Program State (ID: 2) ===
+=== Program State (ID: 1) ===
 ExeStack: ExecutionStack: [print(rH(VariableExpression[variableName=a]))]
 SymTable: {a=(1, buzz.model.type.IntType@4cfcf9be), v=IntegerValue[value=10]}
 Out: ListOut{elements=[IntegerValue[value=10]]}
@@ -279,7 +119,7 @@ FileTable: []
 Heap: {1=IntegerValue[value=30]}
 
 
-=== Program State (ID: 3) ===
+=== Program State (ID: 2) ===
 ExeStack: ExecutionStack: [(v = IntegerValue[value=32]; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a]))))]
 SymTable: {a=(1, buzz.model.type.IntType@4cfcf9be), v=IntegerValue[value=10]}
 Out: ListOut{elements=[IntegerValue[value=10]]}
@@ -287,7 +127,7 @@ FileTable: []
 Heap: {1=IntegerValue[value=30]}
 
 
-=== Program State (ID: 3) ===
+=== Program State (ID: 2) ===
 ExeStack: ExecutionStack: [v = IntegerValue[value=32], (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))]
 SymTable: {a=(1, buzz.model.type.IntType@4cfcf9be), v=IntegerValue[value=10]}
 Out: ListOut{elements=[IntegerValue[value=10], IntegerValue[value=30]]}
@@ -295,7 +135,7 @@ FileTable: []
 Heap: {1=IntegerValue[value=30]}
 
 
-=== Program State (ID: 3) ===
+=== Program State (ID: 2) ===
 ExeStack: ExecutionStack: [(print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))]
 SymTable: {a=(1, buzz.model.type.IntType@4cfcf9be), v=IntegerValue[value=32]}
 Out: ListOut{elements=[IntegerValue[value=10], IntegerValue[value=30]]}
@@ -303,7 +143,7 @@ FileTable: []
 Heap: {1=IntegerValue[value=30]}
 
 
-=== Program State (ID: 3) ===
+=== Program State (ID: 2) ===
 ExeStack: ExecutionStack: [print(VariableExpression[variableName=v]), print(rH(VariableExpression[variableName=a]))]
 SymTable: {a=(1, buzz.model.type.IntType@4cfcf9be), v=IntegerValue[value=32]}
 Out: ListOut{elements=[IntegerValue[value=10], IntegerValue[value=30]]}
@@ -311,10 +151,1322 @@ FileTable: []
 Heap: {1=IntegerValue[value=30]}
 
 
-=== Program State (ID: 3) ===
+=== Program State (ID: 2) ===
 ExeStack: ExecutionStack: [print(rH(VariableExpression[variableName=a]))]
 SymTable: {a=(1, buzz.model.type.IntType@4cfcf9be), v=IntegerValue[value=32]}
 Out: ListOut{elements=[IntegerValue[value=10], IntegerValue[value=30], IntegerValue[value=32]]}
 FileTable: []
 Heap: {1=IntegerValue[value=30]}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [(buzz.model.type.IntType@d84efd8 v; (Ref(buzz.model.type.IntType@4cfcf9be) a; (v = IntegerValue[value=10]; (new(a, IntegerValue[value=22]); (fork((wH(a, IntegerValue[value=30]); (v = IntegerValue[value=32]; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))); (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a]))))))))]
+SymTable: {}
+Out: ListOut{elements=[]}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [buzz.model.type.IntType@d84efd8 v, (Ref(buzz.model.type.IntType@4cfcf9be) a; (v = IntegerValue[value=10]; (new(a, IntegerValue[value=22]); (fork((wH(a, IntegerValue[value=30]); (v = IntegerValue[value=32]; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))); (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))))]
+SymTable: {}
+Out: ListOut{elements=[]}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [buzz.model.type.IntType@d84efd8 v, (Ref(buzz.model.type.IntType@4cfcf9be) a; (v = IntegerValue[value=10]; (new(a, IntegerValue[value=22]); (fork((wH(a, IntegerValue[value=30]); (v = IntegerValue[value=32]; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))); (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))))]
+SymTable: {}
+Out: ListOut{elements=[]}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [(Ref(buzz.model.type.IntType@4cfcf9be) a; (v = IntegerValue[value=10]; (new(a, IntegerValue[value=22]); (fork((wH(a, IntegerValue[value=30]); (v = IntegerValue[value=32]; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))); (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))))]
+SymTable: {v=IntegerValue[value=0]}
+Out: ListOut{elements=[]}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [(Ref(buzz.model.type.IntType@4cfcf9be) a; (v = IntegerValue[value=10]; (new(a, IntegerValue[value=22]); (fork((wH(a, IntegerValue[value=30]); (v = IntegerValue[value=32]; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))); (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))))]
+SymTable: {v=IntegerValue[value=0]}
+Out: ListOut{elements=[]}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [Ref(buzz.model.type.IntType@4cfcf9be) a, (v = IntegerValue[value=10]; (new(a, IntegerValue[value=22]); (fork((wH(a, IntegerValue[value=30]); (v = IntegerValue[value=32]; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))); (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a]))))))]
+SymTable: {v=IntegerValue[value=0]}
+Out: ListOut{elements=[]}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [Ref(buzz.model.type.IntType@4cfcf9be) a, (v = IntegerValue[value=10]; (new(a, IntegerValue[value=22]); (fork((wH(a, IntegerValue[value=30]); (v = IntegerValue[value=32]; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))); (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a]))))))]
+SymTable: {v=IntegerValue[value=0]}
+Out: ListOut{elements=[]}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [(v = IntegerValue[value=10]; (new(a, IntegerValue[value=22]); (fork((wH(a, IntegerValue[value=30]); (v = IntegerValue[value=32]; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))); (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a]))))))]
+SymTable: {a=(0, buzz.model.type.IntType@4cfcf9be), v=IntegerValue[value=0]}
+Out: ListOut{elements=[]}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [(v = IntegerValue[value=10]; (new(a, IntegerValue[value=22]); (fork((wH(a, IntegerValue[value=30]); (v = IntegerValue[value=32]; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))); (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a]))))))]
+SymTable: {a=(0, buzz.model.type.IntType@4cfcf9be), v=IntegerValue[value=0]}
+Out: ListOut{elements=[]}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [v = IntegerValue[value=10], (new(a, IntegerValue[value=22]); (fork((wH(a, IntegerValue[value=30]); (v = IntegerValue[value=32]; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))); (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))]
+SymTable: {a=(0, buzz.model.type.IntType@4cfcf9be), v=IntegerValue[value=0]}
+Out: ListOut{elements=[]}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [v = IntegerValue[value=10], (new(a, IntegerValue[value=22]); (fork((wH(a, IntegerValue[value=30]); (v = IntegerValue[value=32]; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))); (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))]
+SymTable: {a=(0, buzz.model.type.IntType@4cfcf9be), v=IntegerValue[value=0]}
+Out: ListOut{elements=[]}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [(new(a, IntegerValue[value=22]); (fork((wH(a, IntegerValue[value=30]); (v = IntegerValue[value=32]; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))); (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))]
+SymTable: {a=(0, buzz.model.type.IntType@4cfcf9be), v=IntegerValue[value=10]}
+Out: ListOut{elements=[]}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [(new(a, IntegerValue[value=22]); (fork((wH(a, IntegerValue[value=30]); (v = IntegerValue[value=32]; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))); (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))]
+SymTable: {a=(0, buzz.model.type.IntType@4cfcf9be), v=IntegerValue[value=10]}
+Out: ListOut{elements=[]}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [new(a, IntegerValue[value=22]), (fork((wH(a, IntegerValue[value=30]); (v = IntegerValue[value=32]; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))); (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a]))))]
+SymTable: {a=(0, buzz.model.type.IntType@4cfcf9be), v=IntegerValue[value=10]}
+Out: ListOut{elements=[]}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [new(a, IntegerValue[value=22]), (fork((wH(a, IntegerValue[value=30]); (v = IntegerValue[value=32]; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))); (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a]))))]
+SymTable: {a=(0, buzz.model.type.IntType@4cfcf9be), v=IntegerValue[value=10]}
+Out: ListOut{elements=[]}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [(fork((wH(a, IntegerValue[value=30]); (v = IntegerValue[value=32]; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))); (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a]))))]
+SymTable: {a=(1, buzz.model.type.IntType@4cfcf9be), v=IntegerValue[value=10]}
+Out: ListOut{elements=[]}
+FileTable: []
+Heap: {1=IntegerValue[value=22]}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [(fork((wH(a, IntegerValue[value=30]); (v = IntegerValue[value=32]; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))); (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a]))))]
+SymTable: {a=(1, buzz.model.type.IntType@4cfcf9be), v=IntegerValue[value=10]}
+Out: ListOut{elements=[]}
+FileTable: []
+Heap: {1=IntegerValue[value=22]}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [fork((wH(a, IntegerValue[value=30]); (v = IntegerValue[value=32]; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))), (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))]
+SymTable: {a=(1, buzz.model.type.IntType@4cfcf9be), v=IntegerValue[value=10]}
+Out: ListOut{elements=[]}
+FileTable: []
+Heap: {1=IntegerValue[value=22]}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [fork((wH(a, IntegerValue[value=30]); (v = IntegerValue[value=32]; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))), (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))]
+SymTable: {a=(1, buzz.model.type.IntType@4cfcf9be), v=IntegerValue[value=10]}
+Out: ListOut{elements=[]}
+FileTable: []
+Heap: {1=IntegerValue[value=22]}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [(print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))]
+SymTable: {a=(1, buzz.model.type.IntType@4cfcf9be), v=IntegerValue[value=10]}
+Out: ListOut{elements=[]}
+FileTable: []
+Heap: {1=IntegerValue[value=22]}
+
+
+=== Program State (ID: 2) ===
+ExeStack: ExecutionStack: [(wH(a, IntegerValue[value=30]); (v = IntegerValue[value=32]; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))]
+SymTable: {a=(1, buzz.model.type.IntType@4cfcf9be), v=IntegerValue[value=10]}
+Out: ListOut{elements=[]}
+FileTable: []
+Heap: {1=IntegerValue[value=22]}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [(print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))]
+SymTable: {a=(1, buzz.model.type.IntType@4cfcf9be), v=IntegerValue[value=10]}
+Out: ListOut{elements=[]}
+FileTable: []
+Heap: {1=IntegerValue[value=22]}
+
+
+=== Program State (ID: 2) ===
+ExeStack: ExecutionStack: [(wH(a, IntegerValue[value=30]); (v = IntegerValue[value=32]; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))]
+SymTable: {a=(1, buzz.model.type.IntType@4cfcf9be), v=IntegerValue[value=10]}
+Out: ListOut{elements=[]}
+FileTable: []
+Heap: {1=IntegerValue[value=22]}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [print(VariableExpression[variableName=v]), print(rH(VariableExpression[variableName=a]))]
+SymTable: {a=(1, buzz.model.type.IntType@4cfcf9be), v=IntegerValue[value=10]}
+Out: ListOut{elements=[]}
+FileTable: []
+Heap: {1=IntegerValue[value=22]}
+
+
+=== Program State (ID: 2) ===
+ExeStack: ExecutionStack: [wH(a, IntegerValue[value=30]), (v = IntegerValue[value=32]; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a]))))]
+SymTable: {a=(1, buzz.model.type.IntType@4cfcf9be), v=IntegerValue[value=10]}
+Out: ListOut{elements=[]}
+FileTable: []
+Heap: {1=IntegerValue[value=22]}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [print(VariableExpression[variableName=v]), print(rH(VariableExpression[variableName=a]))]
+SymTable: {a=(1, buzz.model.type.IntType@4cfcf9be), v=IntegerValue[value=10]}
+Out: ListOut{elements=[]}
+FileTable: []
+Heap: {1=IntegerValue[value=22]}
+
+
+=== Program State (ID: 2) ===
+ExeStack: ExecutionStack: [wH(a, IntegerValue[value=30]), (v = IntegerValue[value=32]; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a]))))]
+SymTable: {a=(1, buzz.model.type.IntType@4cfcf9be), v=IntegerValue[value=10]}
+Out: ListOut{elements=[]}
+FileTable: []
+Heap: {1=IntegerValue[value=22]}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [print(rH(VariableExpression[variableName=a]))]
+SymTable: {a=(1, buzz.model.type.IntType@4cfcf9be), v=IntegerValue[value=10]}
+Out: ListOut{elements=[IntegerValue[value=10]]}
+FileTable: []
+Heap: {1=IntegerValue[value=30]}
+
+
+=== Program State (ID: 2) ===
+ExeStack: ExecutionStack: [(v = IntegerValue[value=32]; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a]))))]
+SymTable: {a=(1, buzz.model.type.IntType@4cfcf9be), v=IntegerValue[value=10]}
+Out: ListOut{elements=[IntegerValue[value=10]]}
+FileTable: []
+Heap: {1=IntegerValue[value=30]}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [print(rH(VariableExpression[variableName=a]))]
+SymTable: {a=(1, buzz.model.type.IntType@4cfcf9be), v=IntegerValue[value=10]}
+Out: ListOut{elements=[IntegerValue[value=10]]}
+FileTable: []
+Heap: {1=IntegerValue[value=30]}
+
+
+=== Program State (ID: 2) ===
+ExeStack: ExecutionStack: [(v = IntegerValue[value=32]; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a]))))]
+SymTable: {a=(1, buzz.model.type.IntType@4cfcf9be), v=IntegerValue[value=10]}
+Out: ListOut{elements=[IntegerValue[value=10]]}
+FileTable: []
+Heap: {1=IntegerValue[value=30]}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: []
+SymTable: {a=(1, buzz.model.type.IntType@4cfcf9be), v=IntegerValue[value=10]}
+Out: ListOut{elements=[IntegerValue[value=10], IntegerValue[value=30]]}
+FileTable: []
+Heap: {1=IntegerValue[value=30]}
+
+
+=== Program State (ID: 2) ===
+ExeStack: ExecutionStack: [v = IntegerValue[value=32], (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))]
+SymTable: {a=(1, buzz.model.type.IntType@4cfcf9be), v=IntegerValue[value=10]}
+Out: ListOut{elements=[IntegerValue[value=10], IntegerValue[value=30]]}
+FileTable: []
+Heap: {1=IntegerValue[value=30]}
+
+
+=== Program State (ID: 2) ===
+ExeStack: ExecutionStack: [v = IntegerValue[value=32], (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))]
+SymTable: {a=(1, buzz.model.type.IntType@4cfcf9be), v=IntegerValue[value=10]}
+Out: ListOut{elements=[IntegerValue[value=10], IntegerValue[value=30]]}
+FileTable: []
+Heap: {1=IntegerValue[value=30]}
+
+
+=== Program State (ID: 2) ===
+ExeStack: ExecutionStack: [(print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))]
+SymTable: {a=(1, buzz.model.type.IntType@4cfcf9be), v=IntegerValue[value=32]}
+Out: ListOut{elements=[IntegerValue[value=10], IntegerValue[value=30]]}
+FileTable: []
+Heap: {1=IntegerValue[value=30]}
+
+
+=== Program State (ID: 2) ===
+ExeStack: ExecutionStack: [(print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))]
+SymTable: {a=(1, buzz.model.type.IntType@4cfcf9be), v=IntegerValue[value=32]}
+Out: ListOut{elements=[IntegerValue[value=10], IntegerValue[value=30]]}
+FileTable: []
+Heap: {1=IntegerValue[value=30]}
+
+
+=== Program State (ID: 2) ===
+ExeStack: ExecutionStack: [print(VariableExpression[variableName=v]), print(rH(VariableExpression[variableName=a]))]
+SymTable: {a=(1, buzz.model.type.IntType@4cfcf9be), v=IntegerValue[value=32]}
+Out: ListOut{elements=[IntegerValue[value=10], IntegerValue[value=30]]}
+FileTable: []
+Heap: {1=IntegerValue[value=30]}
+
+
+=== Program State (ID: 2) ===
+ExeStack: ExecutionStack: [print(VariableExpression[variableName=v]), print(rH(VariableExpression[variableName=a]))]
+SymTable: {a=(1, buzz.model.type.IntType@4cfcf9be), v=IntegerValue[value=32]}
+Out: ListOut{elements=[IntegerValue[value=10], IntegerValue[value=30]]}
+FileTable: []
+Heap: {1=IntegerValue[value=30]}
+
+
+=== Program State (ID: 2) ===
+ExeStack: ExecutionStack: [print(rH(VariableExpression[variableName=a]))]
+SymTable: {a=(1, buzz.model.type.IntType@4cfcf9be), v=IntegerValue[value=32]}
+Out: ListOut{elements=[IntegerValue[value=10], IntegerValue[value=30], IntegerValue[value=32]]}
+FileTable: []
+Heap: {1=IntegerValue[value=30]}
+
+
+=== Program State (ID: 2) ===
+ExeStack: ExecutionStack: [print(rH(VariableExpression[variableName=a]))]
+SymTable: {a=(1, buzz.model.type.IntType@4cfcf9be), v=IntegerValue[value=32]}
+Out: ListOut{elements=[IntegerValue[value=10], IntegerValue[value=30], IntegerValue[value=32]]}
+FileTable: []
+Heap: {1=IntegerValue[value=30]}
+
+
+=== Program State (ID: 2) ===
+ExeStack: ExecutionStack: []
+SymTable: {a=(1, buzz.model.type.IntType@4cfcf9be), v=IntegerValue[value=32]}
+Out: ListOut{elements=[IntegerValue[value=10], IntegerValue[value=30], IntegerValue[value=32], IntegerValue[value=30]]}
+FileTable: []
+Heap: {1=IntegerValue[value=30]}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [(int v; (Ref(int) a; (v = 10; (new(a, 22); (fork((wH(a, 30); (v = 32; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))); (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a]))))))))]
+SymTable: {}
+Out: {}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [int v, (Ref(int) a; (v = 10; (new(a, 22); (fork((wH(a, 30); (v = 32; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))); (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))))]
+SymTable: {}
+Out: {}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [int v, (Ref(int) a; (v = 10; (new(a, 22); (fork((wH(a, 30); (v = 32; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))); (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))))]
+SymTable: {}
+Out: {}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [(Ref(int) a; (v = 10; (new(a, 22); (fork((wH(a, 30); (v = 32; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))); (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))))]
+SymTable: {v=0}
+Out: {}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [(Ref(int) a; (v = 10; (new(a, 22); (fork((wH(a, 30); (v = 32; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))); (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))))]
+SymTable: {v=0}
+Out: {}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [Ref(int) a, (v = 10; (new(a, 22); (fork((wH(a, 30); (v = 32; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))); (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a]))))))]
+SymTable: {v=0}
+Out: {}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [Ref(int) a, (v = 10; (new(a, 22); (fork((wH(a, 30); (v = 32; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))); (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a]))))))]
+SymTable: {v=0}
+Out: {}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [(v = 10; (new(a, 22); (fork((wH(a, 30); (v = 32; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))); (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a]))))))]
+SymTable: {a=(0, int), v=0}
+Out: {}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [(v = 10; (new(a, 22); (fork((wH(a, 30); (v = 32; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))); (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a]))))))]
+SymTable: {a=(0, int), v=0}
+Out: {}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [v = 10, (new(a, 22); (fork((wH(a, 30); (v = 32; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))); (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))]
+SymTable: {a=(0, int), v=0}
+Out: {}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [v = 10, (new(a, 22); (fork((wH(a, 30); (v = 32; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))); (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))]
+SymTable: {a=(0, int), v=0}
+Out: {}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [(new(a, 22); (fork((wH(a, 30); (v = 32; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))); (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))]
+SymTable: {a=(0, int), v=10}
+Out: {}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [(new(a, 22); (fork((wH(a, 30); (v = 32; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))); (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))]
+SymTable: {a=(0, int), v=10}
+Out: {}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [new(a, 22), (fork((wH(a, 30); (v = 32; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))); (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a]))))]
+SymTable: {a=(0, int), v=10}
+Out: {}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [new(a, 22), (fork((wH(a, 30); (v = 32; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))); (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a]))))]
+SymTable: {a=(0, int), v=10}
+Out: {}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [(fork((wH(a, 30); (v = 32; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))); (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a]))))]
+SymTable: {a=(1, int), v=10}
+Out: {}
+FileTable: []
+Heap: {1=22}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [(fork((wH(a, 30); (v = 32; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))); (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a]))))]
+SymTable: {a=(1, int), v=10}
+Out: {}
+FileTable: []
+Heap: {1=22}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [fork((wH(a, 30); (v = 32; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))), (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))]
+SymTable: {a=(1, int), v=10}
+Out: {}
+FileTable: []
+Heap: {1=22}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [fork((wH(a, 30); (v = 32; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))), (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))]
+SymTable: {a=(1, int), v=10}
+Out: {}
+FileTable: []
+Heap: {1=22}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [(print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))]
+SymTable: {a=(1, int), v=10}
+Out: {}
+FileTable: []
+Heap: {1=22}
+
+
+=== Program State (ID: 2) ===
+ExeStack: ExecutionStack: [(wH(a, 30); (v = 32; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))]
+SymTable: {a=(1, int), v=10}
+Out: {}
+FileTable: []
+Heap: {1=22}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [(print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))]
+SymTable: {a=(1, int), v=10}
+Out: {}
+FileTable: []
+Heap: {1=22}
+
+
+=== Program State (ID: 2) ===
+ExeStack: ExecutionStack: [(wH(a, 30); (v = 32; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))))]
+SymTable: {a=(1, int), v=10}
+Out: {}
+FileTable: []
+Heap: {1=22}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [print(VariableExpression[variableName=v]), print(rH(VariableExpression[variableName=a]))]
+SymTable: {a=(1, int), v=10}
+Out: {}
+FileTable: []
+Heap: {1=22}
+
+
+=== Program State (ID: 2) ===
+ExeStack: ExecutionStack: [wH(a, 30), (v = 32; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a]))))]
+SymTable: {a=(1, int), v=10}
+Out: {}
+FileTable: []
+Heap: {1=22}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [print(VariableExpression[variableName=v]), print(rH(VariableExpression[variableName=a]))]
+SymTable: {a=(1, int), v=10}
+Out: {}
+FileTable: []
+Heap: {1=22}
+
+
+=== Program State (ID: 2) ===
+ExeStack: ExecutionStack: [wH(a, 30), (v = 32; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a]))))]
+SymTable: {a=(1, int), v=10}
+Out: {}
+FileTable: []
+Heap: {1=22}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [print(rH(VariableExpression[variableName=a]))]
+SymTable: {a=(1, int), v=10}
+Out: {10}
+FileTable: []
+Heap: {1=30}
+
+
+=== Program State (ID: 2) ===
+ExeStack: ExecutionStack: [(v = 32; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a]))))]
+SymTable: {a=(1, int), v=10}
+Out: {10}
+FileTable: []
+Heap: {1=30}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [print(rH(VariableExpression[variableName=a]))]
+SymTable: {a=(1, int), v=10}
+Out: {10}
+FileTable: []
+Heap: {1=30}
+
+
+=== Program State (ID: 2) ===
+ExeStack: ExecutionStack: [(v = 32; (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a]))))]
+SymTable: {a=(1, int), v=10}
+Out: {10}
+FileTable: []
+Heap: {1=30}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: []
+SymTable: {a=(1, int), v=10}
+Out: {10, 30}
+FileTable: []
+Heap: {1=30}
+
+
+=== Program State (ID: 2) ===
+ExeStack: ExecutionStack: [v = 32, (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))]
+SymTable: {a=(1, int), v=10}
+Out: {10, 30}
+FileTable: []
+Heap: {1=30}
+
+
+=== Program State (ID: 2) ===
+ExeStack: ExecutionStack: [v = 32, (print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))]
+SymTable: {a=(1, int), v=10}
+Out: {10, 30}
+FileTable: []
+Heap: {1=30}
+
+
+=== Program State (ID: 2) ===
+ExeStack: ExecutionStack: [(print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))]
+SymTable: {a=(1, int), v=32}
+Out: {10, 30}
+FileTable: []
+Heap: {1=30}
+
+
+=== Program State (ID: 2) ===
+ExeStack: ExecutionStack: [(print(VariableExpression[variableName=v]); print(rH(VariableExpression[variableName=a])))]
+SymTable: {a=(1, int), v=32}
+Out: {10, 30}
+FileTable: []
+Heap: {1=30}
+
+
+=== Program State (ID: 2) ===
+ExeStack: ExecutionStack: [print(VariableExpression[variableName=v]), print(rH(VariableExpression[variableName=a]))]
+SymTable: {a=(1, int), v=32}
+Out: {10, 30}
+FileTable: []
+Heap: {1=30}
+
+
+=== Program State (ID: 2) ===
+ExeStack: ExecutionStack: [print(VariableExpression[variableName=v]), print(rH(VariableExpression[variableName=a]))]
+SymTable: {a=(1, int), v=32}
+Out: {10, 30}
+FileTable: []
+Heap: {1=30}
+
+
+=== Program State (ID: 2) ===
+ExeStack: ExecutionStack: [print(rH(VariableExpression[variableName=a]))]
+SymTable: {a=(1, int), v=32}
+Out: {10, 30, 32}
+FileTable: []
+Heap: {1=30}
+
+
+=== Program State (ID: 2) ===
+ExeStack: ExecutionStack: [print(rH(VariableExpression[variableName=a]))]
+SymTable: {a=(1, int), v=32}
+Out: {10, 30, 32}
+FileTable: []
+Heap: {1=30}
+
+
+=== Program State (ID: 2) ===
+ExeStack: ExecutionStack: []
+SymTable: {a=(1, int), v=32}
+Out: {10, 30, 32, 30}
+FileTable: []
+Heap: {1=30}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [(int v; (Ref(int) a; (v = 10; (new(a, 22); (fork((wH(a, 30); (v = 32; (print(v); print(rH(a)))))); (print(v); print(rH(a))))))))]
+SymTable: {}
+Out: {}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [int v, (Ref(int) a; (v = 10; (new(a, 22); (fork((wH(a, 30); (v = 32; (print(v); print(rH(a)))))); (print(v); print(rH(a)))))))]
+SymTable: {}
+Out: {}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [int v, (Ref(int) a; (v = 10; (new(a, 22); (fork((wH(a, 30); (v = 32; (print(v); print(rH(a)))))); (print(v); print(rH(a)))))))]
+SymTable: {}
+Out: {}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [(Ref(int) a; (v = 10; (new(a, 22); (fork((wH(a, 30); (v = 32; (print(v); print(rH(a)))))); (print(v); print(rH(a)))))))]
+SymTable: {v=0}
+Out: {}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [(Ref(int) a; (v = 10; (new(a, 22); (fork((wH(a, 30); (v = 32; (print(v); print(rH(a)))))); (print(v); print(rH(a)))))))]
+SymTable: {v=0}
+Out: {}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [Ref(int) a, (v = 10; (new(a, 22); (fork((wH(a, 30); (v = 32; (print(v); print(rH(a)))))); (print(v); print(rH(a))))))]
+SymTable: {v=0}
+Out: {}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [Ref(int) a, (v = 10; (new(a, 22); (fork((wH(a, 30); (v = 32; (print(v); print(rH(a)))))); (print(v); print(rH(a))))))]
+SymTable: {v=0}
+Out: {}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [(v = 10; (new(a, 22); (fork((wH(a, 30); (v = 32; (print(v); print(rH(a)))))); (print(v); print(rH(a))))))]
+SymTable: {a=(0, int), v=0}
+Out: {}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [(v = 10; (new(a, 22); (fork((wH(a, 30); (v = 32; (print(v); print(rH(a)))))); (print(v); print(rH(a))))))]
+SymTable: {a=(0, int), v=0}
+Out: {}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [v = 10, (new(a, 22); (fork((wH(a, 30); (v = 32; (print(v); print(rH(a)))))); (print(v); print(rH(a)))))]
+SymTable: {a=(0, int), v=0}
+Out: {}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [v = 10, (new(a, 22); (fork((wH(a, 30); (v = 32; (print(v); print(rH(a)))))); (print(v); print(rH(a)))))]
+SymTable: {a=(0, int), v=0}
+Out: {}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [(new(a, 22); (fork((wH(a, 30); (v = 32; (print(v); print(rH(a)))))); (print(v); print(rH(a)))))]
+SymTable: {a=(0, int), v=10}
+Out: {}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [(new(a, 22); (fork((wH(a, 30); (v = 32; (print(v); print(rH(a)))))); (print(v); print(rH(a)))))]
+SymTable: {a=(0, int), v=10}
+Out: {}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [new(a, 22), (fork((wH(a, 30); (v = 32; (print(v); print(rH(a)))))); (print(v); print(rH(a))))]
+SymTable: {a=(0, int), v=10}
+Out: {}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [new(a, 22), (fork((wH(a, 30); (v = 32; (print(v); print(rH(a)))))); (print(v); print(rH(a))))]
+SymTable: {a=(0, int), v=10}
+Out: {}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [(fork((wH(a, 30); (v = 32; (print(v); print(rH(a)))))); (print(v); print(rH(a))))]
+SymTable: {a=(1, int), v=10}
+Out: {}
+FileTable: []
+Heap: {1=22}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [(fork((wH(a, 30); (v = 32; (print(v); print(rH(a)))))); (print(v); print(rH(a))))]
+SymTable: {a=(1, int), v=10}
+Out: {}
+FileTable: []
+Heap: {1=22}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [fork((wH(a, 30); (v = 32; (print(v); print(rH(a)))))), (print(v); print(rH(a)))]
+SymTable: {a=(1, int), v=10}
+Out: {}
+FileTable: []
+Heap: {1=22}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [fork((wH(a, 30); (v = 32; (print(v); print(rH(a)))))), (print(v); print(rH(a)))]
+SymTable: {a=(1, int), v=10}
+Out: {}
+FileTable: []
+Heap: {1=22}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [(print(v); print(rH(a)))]
+SymTable: {a=(1, int), v=10}
+Out: {}
+FileTable: []
+Heap: {1=22}
+
+
+=== Program State (ID: 2) ===
+ExeStack: ExecutionStack: [(wH(a, 30); (v = 32; (print(v); print(rH(a)))))]
+SymTable: {a=(1, int), v=10}
+Out: {}
+FileTable: []
+Heap: {1=22}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [(print(v); print(rH(a)))]
+SymTable: {a=(1, int), v=10}
+Out: {}
+FileTable: []
+Heap: {1=22}
+
+
+=== Program State (ID: 2) ===
+ExeStack: ExecutionStack: [(wH(a, 30); (v = 32; (print(v); print(rH(a)))))]
+SymTable: {a=(1, int), v=10}
+Out: {}
+FileTable: []
+Heap: {1=22}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [print(v), print(rH(a))]
+SymTable: {a=(1, int), v=10}
+Out: {}
+FileTable: []
+Heap: {1=22}
+
+
+=== Program State (ID: 2) ===
+ExeStack: ExecutionStack: [wH(a, 30), (v = 32; (print(v); print(rH(a))))]
+SymTable: {a=(1, int), v=10}
+Out: {}
+FileTable: []
+Heap: {1=22}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [print(v), print(rH(a))]
+SymTable: {a=(1, int), v=10}
+Out: {}
+FileTable: []
+Heap: {1=22}
+
+
+=== Program State (ID: 2) ===
+ExeStack: ExecutionStack: [wH(a, 30), (v = 32; (print(v); print(rH(a))))]
+SymTable: {a=(1, int), v=10}
+Out: {}
+FileTable: []
+Heap: {1=22}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [print(rH(a))]
+SymTable: {a=(1, int), v=10}
+Out: {10}
+FileTable: []
+Heap: {1=30}
+
+
+=== Program State (ID: 2) ===
+ExeStack: ExecutionStack: [(v = 32; (print(v); print(rH(a))))]
+SymTable: {a=(1, int), v=10}
+Out: {10}
+FileTable: []
+Heap: {1=30}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [print(rH(a))]
+SymTable: {a=(1, int), v=10}
+Out: {10}
+FileTable: []
+Heap: {1=30}
+
+
+=== Program State (ID: 2) ===
+ExeStack: ExecutionStack: [(v = 32; (print(v); print(rH(a))))]
+SymTable: {a=(1, int), v=10}
+Out: {10}
+FileTable: []
+Heap: {1=30}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: []
+SymTable: {a=(1, int), v=10}
+Out: {10, 30}
+FileTable: []
+Heap: {1=30}
+
+
+=== Program State (ID: 2) ===
+ExeStack: ExecutionStack: [v = 32, (print(v); print(rH(a)))]
+SymTable: {a=(1, int), v=10}
+Out: {10, 30}
+FileTable: []
+Heap: {1=30}
+
+
+=== Program State (ID: 2) ===
+ExeStack: ExecutionStack: [v = 32, (print(v); print(rH(a)))]
+SymTable: {a=(1, int), v=10}
+Out: {10, 30}
+FileTable: []
+Heap: {1=30}
+
+
+=== Program State (ID: 2) ===
+ExeStack: ExecutionStack: [(print(v); print(rH(a)))]
+SymTable: {a=(1, int), v=32}
+Out: {10, 30}
+FileTable: []
+Heap: {1=30}
+
+
+=== Program State (ID: 2) ===
+ExeStack: ExecutionStack: [(print(v); print(rH(a)))]
+SymTable: {a=(1, int), v=32}
+Out: {10, 30}
+FileTable: []
+Heap: {1=30}
+
+
+=== Program State (ID: 2) ===
+ExeStack: ExecutionStack: [print(v), print(rH(a))]
+SymTable: {a=(1, int), v=32}
+Out: {10, 30}
+FileTable: []
+Heap: {1=30}
+
+
+=== Program State (ID: 2) ===
+ExeStack: ExecutionStack: [print(v), print(rH(a))]
+SymTable: {a=(1, int), v=32}
+Out: {10, 30}
+FileTable: []
+Heap: {1=30}
+
+
+=== Program State (ID: 2) ===
+ExeStack: ExecutionStack: [print(rH(a))]
+SymTable: {a=(1, int), v=32}
+Out: {10, 30, 32}
+FileTable: []
+Heap: {1=30}
+
+
+=== Program State (ID: 2) ===
+ExeStack: ExecutionStack: [print(rH(a))]
+SymTable: {a=(1, int), v=32}
+Out: {10, 30, 32}
+FileTable: []
+Heap: {1=30}
+
+
+=== Program State (ID: 2) ===
+ExeStack: ExecutionStack: []
+SymTable: {a=(1, int), v=32}
+Out: {10, 30, 32, 30}
+FileTable: []
+Heap: {1=30}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [(int v; (Ref(int) a; (v = 10; (new(a, 22); (fork((wH(a, 30); (v = 32; (print(v); print(rH(a)))))); (print(v); print(rH(a))))))))]
+SymTable: {}
+Out: {}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [int v, (Ref(int) a; (v = 10; (new(a, 22); (fork((wH(a, 30); (v = 32; (print(v); print(rH(a)))))); (print(v); print(rH(a)))))))]
+SymTable: {}
+Out: {}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [int v, (Ref(int) a; (v = 10; (new(a, 22); (fork((wH(a, 30); (v = 32; (print(v); print(rH(a)))))); (print(v); print(rH(a)))))))]
+SymTable: {}
+Out: {}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [(Ref(int) a; (v = 10; (new(a, 22); (fork((wH(a, 30); (v = 32; (print(v); print(rH(a)))))); (print(v); print(rH(a)))))))]
+SymTable: {v=0}
+Out: {}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [(Ref(int) a; (v = 10; (new(a, 22); (fork((wH(a, 30); (v = 32; (print(v); print(rH(a)))))); (print(v); print(rH(a)))))))]
+SymTable: {v=0}
+Out: {}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [Ref(int) a, (v = 10; (new(a, 22); (fork((wH(a, 30); (v = 32; (print(v); print(rH(a)))))); (print(v); print(rH(a))))))]
+SymTable: {v=0}
+Out: {}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [Ref(int) a, (v = 10; (new(a, 22); (fork((wH(a, 30); (v = 32; (print(v); print(rH(a)))))); (print(v); print(rH(a))))))]
+SymTable: {v=0}
+Out: {}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [(v = 10; (new(a, 22); (fork((wH(a, 30); (v = 32; (print(v); print(rH(a)))))); (print(v); print(rH(a))))))]
+SymTable: {a=(0, int), v=0}
+Out: {}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [(v = 10; (new(a, 22); (fork((wH(a, 30); (v = 32; (print(v); print(rH(a)))))); (print(v); print(rH(a))))))]
+SymTable: {a=(0, int), v=0}
+Out: {}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [v = 10, (new(a, 22); (fork((wH(a, 30); (v = 32; (print(v); print(rH(a)))))); (print(v); print(rH(a)))))]
+SymTable: {a=(0, int), v=0}
+Out: {}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [v = 10, (new(a, 22); (fork((wH(a, 30); (v = 32; (print(v); print(rH(a)))))); (print(v); print(rH(a)))))]
+SymTable: {a=(0, int), v=0}
+Out: {}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [(new(a, 22); (fork((wH(a, 30); (v = 32; (print(v); print(rH(a)))))); (print(v); print(rH(a)))))]
+SymTable: {a=(0, int), v=10}
+Out: {}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [(new(a, 22); (fork((wH(a, 30); (v = 32; (print(v); print(rH(a)))))); (print(v); print(rH(a)))))]
+SymTable: {a=(0, int), v=10}
+Out: {}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [new(a, 22), (fork((wH(a, 30); (v = 32; (print(v); print(rH(a)))))); (print(v); print(rH(a))))]
+SymTable: {a=(0, int), v=10}
+Out: {}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [new(a, 22), (fork((wH(a, 30); (v = 32; (print(v); print(rH(a)))))); (print(v); print(rH(a))))]
+SymTable: {a=(0, int), v=10}
+Out: {}
+FileTable: []
+Heap: {}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [(fork((wH(a, 30); (v = 32; (print(v); print(rH(a)))))); (print(v); print(rH(a))))]
+SymTable: {a=(1, int), v=10}
+Out: {}
+FileTable: []
+Heap: {1=22}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [(fork((wH(a, 30); (v = 32; (print(v); print(rH(a)))))); (print(v); print(rH(a))))]
+SymTable: {a=(1, int), v=10}
+Out: {}
+FileTable: []
+Heap: {1=22}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [fork((wH(a, 30); (v = 32; (print(v); print(rH(a)))))), (print(v); print(rH(a)))]
+SymTable: {a=(1, int), v=10}
+Out: {}
+FileTable: []
+Heap: {1=22}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [fork((wH(a, 30); (v = 32; (print(v); print(rH(a)))))), (print(v); print(rH(a)))]
+SymTable: {a=(1, int), v=10}
+Out: {}
+FileTable: []
+Heap: {1=22}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [(print(v); print(rH(a)))]
+SymTable: {a=(1, int), v=10}
+Out: {}
+FileTable: []
+Heap: {1=22}
+
+
+=== Program State (ID: 2) ===
+ExeStack: ExecutionStack: [(wH(a, 30); (v = 32; (print(v); print(rH(a)))))]
+SymTable: {a=(1, int), v=10}
+Out: {}
+FileTable: []
+Heap: {1=22}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [(print(v); print(rH(a)))]
+SymTable: {a=(1, int), v=10}
+Out: {}
+FileTable: []
+Heap: {1=22}
+
+
+=== Program State (ID: 2) ===
+ExeStack: ExecutionStack: [(wH(a, 30); (v = 32; (print(v); print(rH(a)))))]
+SymTable: {a=(1, int), v=10}
+Out: {}
+FileTable: []
+Heap: {1=22}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [print(v), print(rH(a))]
+SymTable: {a=(1, int), v=10}
+Out: {}
+FileTable: []
+Heap: {1=22}
+
+
+=== Program State (ID: 2) ===
+ExeStack: ExecutionStack: [wH(a, 30), (v = 32; (print(v); print(rH(a))))]
+SymTable: {a=(1, int), v=10}
+Out: {}
+FileTable: []
+Heap: {1=22}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [print(v), print(rH(a))]
+SymTable: {a=(1, int), v=10}
+Out: {}
+FileTable: []
+Heap: {1=22}
+
+
+=== Program State (ID: 2) ===
+ExeStack: ExecutionStack: [wH(a, 30), (v = 32; (print(v); print(rH(a))))]
+SymTable: {a=(1, int), v=10}
+Out: {}
+FileTable: []
+Heap: {1=22}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [print(rH(a))]
+SymTable: {a=(1, int), v=10}
+Out: {10}
+FileTable: []
+Heap: {1=30}
+
+
+=== Program State (ID: 2) ===
+ExeStack: ExecutionStack: [(v = 32; (print(v); print(rH(a))))]
+SymTable: {a=(1, int), v=10}
+Out: {10}
+FileTable: []
+Heap: {1=30}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: [print(rH(a))]
+SymTable: {a=(1, int), v=10}
+Out: {10}
+FileTable: []
+Heap: {1=30}
+
+
+=== Program State (ID: 2) ===
+ExeStack: ExecutionStack: [(v = 32; (print(v); print(rH(a))))]
+SymTable: {a=(1, int), v=10}
+Out: {10}
+FileTable: []
+Heap: {1=30}
+
+
+=== Program State (ID: 1) ===
+ExeStack: ExecutionStack: []
+SymTable: {a=(1, int), v=10}
+Out: {10, 30}
+FileTable: []
+Heap: {1=30}
+
+
+=== Program State (ID: 2) ===
+ExeStack: ExecutionStack: [v = 32, (print(v); print(rH(a)))]
+SymTable: {a=(1, int), v=10}
+Out: {10, 30}
+FileTable: []
+Heap: {1=30}
+
+
+=== Program State (ID: 2) ===
+ExeStack: ExecutionStack: [v = 32, (print(v); print(rH(a)))]
+SymTable: {a=(1, int), v=10}
+Out: {10, 30}
+FileTable: []
+Heap: {1=30}
+
+
+=== Program State (ID: 2) ===
+ExeStack: ExecutionStack: [(print(v); print(rH(a)))]
+SymTable: {a=(1, int), v=32}
+Out: {10, 30}
+FileTable: []
+Heap: {1=30}
+
+
+=== Program State (ID: 2) ===
+ExeStack: ExecutionStack: [(print(v); print(rH(a)))]
+SymTable: {a=(1, int), v=32}
+Out: {10, 30}
+FileTable: []
+Heap: {1=30}
+
+
+=== Program State (ID: 2) ===
+ExeStack: ExecutionStack: [print(v), print(rH(a))]
+SymTable: {a=(1, int), v=32}
+Out: {10, 30}
+FileTable: []
+Heap: {1=30}
+
+
+=== Program State (ID: 2) ===
+ExeStack: ExecutionStack: [print(v), print(rH(a))]
+SymTable: {a=(1, int), v=32}
+Out: {10, 30}
+FileTable: []
+Heap: {1=30}
+
+
+=== Program State (ID: 2) ===
+ExeStack: ExecutionStack: [print(rH(a))]
+SymTable: {a=(1, int), v=32}
+Out: {10, 30, 32}
+FileTable: []
+Heap: {1=30}
+
+
+=== Program State (ID: 2) ===
+ExeStack: ExecutionStack: [print(rH(a))]
+SymTable: {a=(1, int), v=32}
+Out: {10, 30, 32}
+FileTable: []
+Heap: {1=30}
+
+
+=== Program State (ID: 2) ===
+ExeStack: ExecutionStack: []
+SymTable: {a=(1, int), v=32}
+Out: {10, 30, 32, 30}
+FileTable: []
+Heap: {1=30}
 

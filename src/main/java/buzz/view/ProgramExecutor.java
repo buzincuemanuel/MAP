@@ -23,7 +23,6 @@ public class ProgramExecutor {
     private final Controller controller;
     private final Stage stage;
 
-    // UI Components
     private TextField numberOfProgramStatesTextField;
     private TableView<Map.Entry<Integer, Value>> heapTableView;
     private ListView<String> outputListView;
@@ -43,12 +42,10 @@ public class ProgramExecutor {
         VBox root = new VBox(10);
         root.setPadding(new Insets(10));
 
-        // (a) Number of PrgStates
         numberOfProgramStatesTextField = new TextField();
         numberOfProgramStatesTextField.setEditable(false);
         HBox numStatesBox = new HBox(5, new Label("No. Program States:"), numberOfProgramStatesTextField);
 
-        // (b) Heap Table
         heapTableView = new TableView<>();
         TableColumn<Map.Entry<Integer, Value>, Integer> heapAddrCol = new TableColumn<>("Address");
         heapAddrCol.setCellValueFactory(p -> new SimpleIntegerProperty(p.getValue().getKey()).asObject());
@@ -58,20 +55,16 @@ public class ProgramExecutor {
         heapTableView.getColumns().add(heapValCol);
         VBox heapBox = new VBox(5, new Label("Heap Table"), heapTableView);
 
-        // (c) Output
         outputListView = new ListView<>();
         VBox outBox = new VBox(5, new Label("Output"), outputListView);
 
-        // (d) File Table
         fileTableListView = new ListView<>();
         VBox fileBox = new VBox(5, new Label("File Table"), fileTableListView);
 
-        // (e) PrgState Identifiers
         programStateIdentifiersListView = new ListView<>();
         programStateIdentifiersListView.setOnMouseClicked(e -> updateCurrentStateViews());
         VBox prgIdBox = new VBox(5, new Label("PrgState IDs"), programStateIdentifiersListView);
 
-        // (f) Symbol Table
         symbolTableView = new TableView<>();
         TableColumn<Map.Entry<String, Value>, String> symNameCol = new TableColumn<>("Var Name");
         symNameCol.setCellValueFactory(p -> new SimpleStringProperty(p.getValue().getKey()));
@@ -81,11 +74,9 @@ public class ProgramExecutor {
         symbolTableView.getColumns().add(symValCol);
         VBox symBox = new VBox(5, new Label("Symbol Table"), symbolTableView);
 
-        // (g) Execution Stack
         executionStackListView = new ListView<>();
         VBox exeBox = new VBox(5, new Label("Exe Stack"), executionStackListView);
 
-        // Layout Organization (GridPane for better distribution)
         GridPane grid = new GridPane();
         grid.setHgap(10);
         grid.setVgap(10);
@@ -96,7 +87,6 @@ public class ProgramExecutor {
         grid.add(symBox, 1, 1);
         grid.add(exeBox, 2, 1);
 
-        // (h) Run One Step Button
         runOneStepButton = new Button("Run One Step");
         runOneStepButton.setOnAction(e -> runOneStep());
 
@@ -106,7 +96,6 @@ public class ProgramExecutor {
         stage.setTitle("Program Execution");
         stage.setScene(scene);
 
-        // Initial population
         refresh();
     }
 
@@ -139,7 +128,7 @@ public class ProgramExecutor {
         populateOut();
         populateFileTable();
         populatePrgStateIdentifiers();
-        updateCurrentStateViews(); // Updates SymTable and ExeStack based on selection
+        updateCurrentStateViews();
     }
 
     private void populateHeap() {
@@ -174,7 +163,6 @@ public class ProgramExecutor {
     }
 
     private void updateCurrentStateViews() {
-        // Obține ID-ul selectat sau implicit primul
         Integer selectedId = programStateIdentifiersListView.getSelectionModel().getSelectedItem();
         ProgramState currentPrg = null;
 
@@ -190,11 +178,9 @@ public class ProgramExecutor {
                     .orElse(programStates.get(0));
         }
 
-        // Populate Symbol Table
         symbolTableView.setItems(FXCollections.observableArrayList(currentPrg.getSymTable().getContent().entrySet()));
         symbolTableView.refresh();
 
-        // Populate Execution Stack
         List<String> stackList = currentPrg.getExeStack().getStatements().stream()
                 .map(Object::toString)
                 .collect(Collectors.toList());
